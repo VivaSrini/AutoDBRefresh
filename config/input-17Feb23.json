@@ -1,0 +1,336 @@
+[
+  {
+    "Provider": "AL_ADECA",
+    "Website": "http://adeca.alabama.gov/Divisions/ced/cdp/Pages/ombe.aspx",
+    "Title": "Office of Minority Business Enterprise – ADECA",
+    "Steps": [
+      {
+        "XPath": "//a[text()='OMBE certified businesses']",
+        "Name": "OMBE certified businesses Link",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "AK_AUCP",
+    "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
+    "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
+    "Steps": [
+      {
+        "XPath": "//input[@id='btnSearch']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button/span[text()='CSV']",
+        "Name": "CSV button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "AR_EDC",
+    "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
+    "Title": "Directory",
+    "Steps": [
+      {
+        "XPath": "//button[text()='Accept']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@id='search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[text()='Export Filtered List']",
+        "Name": "CSV button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_CALTRANS",
+    "Website": "https://ucp.dot.ca.gov/index2.jsp",
+    "Title": "DBE Firms Query - Welcome",
+    "Steps": [
+      {
+        "XPath": "//a[text()='Start DBE Firms Query']",
+        "Name": "Start DBE Firms Query link",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@value='Search - Export Options']",
+        "Name": "Search - Export Options button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a/span[text()='CSV ']",
+        "Name": "CSV link",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_DGS",
+    "Website": "https://caleprocure.ca.gov/pages/index.aspx",
+    "Title": "California State Government Marketplace",
+    "Steps": [
+      {
+        "XPath": "//button[@id='get-started']",
+        "Name": "Start-Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@name='RESP_INQA_WK_INQ_AUC_GO_PB']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@aria-label='Download']",
+        "Name": "Download button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[@id='downloadButton']",
+        "Name": "Download Attachment button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_LACITY_DBE",
+    "Website": "https://bca.lacity.org/CertificationListings/DBETable.php",
+    "Title": "DBE/MBE/WBE Directory",
+    "Steps": [
+      {
+        "XPath": "//button/span[text()='Excel']",
+        "Name": "Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_LACITY_SLB",
+    "Website": "https://bca.lacity.org/CertificationListings/SLBDirectory.php",
+    "Title": "SLB Directory",
+    "Steps": [
+      {
+        "XPath": "//button/span[text()='Excel']",
+        "Name": "Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_SFCTA_LGBTE",
+    "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
+    "Title": "Work with Us | SFCTA",
+    "Steps": [
+      {
+        "XPath": "//a[contains(text(),'SFCTA Certified DBE/LBE/SBE/LGBTBE/DVBE')]",
+        "Name": "SFCTA certified LGBTE Link",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_SFCTA_SBE",
+    "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
+    "Title": "Work with Us | SFCTA",
+    "Steps": [
+      {
+        "XPath": "//a[contains(text(),'I AGREE')]",
+        "Name": "Privacy Policy Link - I AGREE button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[contains(text(),'SBE and DVBE')]",
+        "Name": "SFCTA certified SBE and DVBE Link",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@name='ZZ_PUBSRCH1_WRK_BUTTON']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@aria-label='Download']",
+        "Name": "Download button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[@id='downloadButton']",
+        "Name": "Download Attachment button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_ACGOV",
+    "Website": "https://www.acgov.org/sleb_query_app/slebmenu.jsp",
+    "Title": "SLEB Supplier Search",
+    "Steps": [
+      {
+        "XPath": "//a[contains(text(),'Advanced Search')]",
+        "Name": "Advanced Search Link",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@id='name')]",
+        "Name": "Business Name entry",
+        "Action": "Input",
+        "Data": "[a-z]"
+      },
+      {
+        "XPath": "//input[@value='Find Suppliers')]",
+        "Name": "Find Suppliers button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[@class='quicklink']",
+        "Name": "Export to Excel",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_PORTOAK",
+    "Website": "https://srd.portofoakland.com/index.aspx",
+    "Title": "Port's Social Responsibility database of certified businesses",
+    "Steps": [
+      {
+        "XPath": "//input[@name='sSearchBasic']",
+        "Name": "Search box",
+        "Action": "Input",
+        "Data": "[a-z]"
+      },
+      {
+        "XPath": "//a[@id='btn-searchbasic']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//div[@id='tb']//div/a",
+        "Name": "Export to Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_OAKLAND",
+    "Website": "https://apps.oaklandca.gov/contractcompliance/Contractors.aspx",
+    "Title": "Certified Contractors",
+    "Steps": [
+      {
+        "XPath": "//a[@title='Download List']",
+        "Name": "Download List button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CO_DENVER_RTD",
+    "Website": "https://www.rtd-denver.com/business-center/dbesbe#sbe-directory",
+    "Title": "DBE/SBE Program | RTD - Denver",
+    "Steps": [
+      {
+        "XPath": "//a[contains(text(),'RTD-SBE-Directory-01-31-2023.xls')]",
+        "Name": "RTD-SBE-Directory-01-31-2023.xls link",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CT_BIZNET_SD",
+    "Website": "https://biznet.ct.gov/SDSearch/SDSearch.aspx",
+    "Title": "Company Search",
+    "Steps": [
+      {
+        "XPath": "//input[@id='btnSearch']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@id='btnExport']",
+        "Name": "Export to Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "DC_DSLBD",
+    "Website": "https://dslbd.secure.force.com/public/",
+    "Title": "DC.gov DSLBD",
+    "Steps": [
+      {
+        "XPath": "//input[@value='Export All']",
+        "Name": "Export All button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "FL_DOT",
+    "Website": "https://fdotxwp02.dot.state.fl.us/EqualOpportunityOfficeBusinessDirectory/CustomSearch.aspx",
+    "Title": "DBE Directory",
+    "Steps": [
+      {
+        "XPath": "//input[@class='ui-dialog-titlebar-close']",
+        "Name": "Dialog close button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//span[@id='recaptcha-anchor']",
+        "Name": "I'm not a robot button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@class='btnRunRptTop']",
+        "Name": "Run Report button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@value='EXCEL']",
+        "Name": "Report Format Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  }
+]

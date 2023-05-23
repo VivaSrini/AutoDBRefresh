@@ -57,6 +57,9 @@ The `input.json` file contains all the source items to be processed. Each Item w
 |Name|Name of source from input links file|
 |Website|Website of source from input links file|
 |Title|Browser Window title (not used for validation anymore)|
+|Download|Yes/No Download this source file?|
+|Convert|Yes/No Convert and add records to output?|
+|Filename|If manually downloaded separately, specify filename here to convert|
 |Steps|Steps to be performed. Each Step has four fields explained below|
 ### Step fields
 |Step Field|Description|

@@ -1,0 +1,47 @@
+[
+  {
+    "Provider": "AR_EDC",
+	"State": "AR",
+    "Name": "Arkansas Economic Development Commission - AEDC",
+    "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
+    "Title": "Directory",
+    "Steps": [
+      {
+        "XPath": "//a[text()='Export Full Database']",
+        "Name": "Export Full Database Link",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//label[contains(text(),'First Name')]/following-sibling::input",
+        "Name": "First Name Text Box",
+        "Action": "Input",
+        "Data": "Peter"
+      },
+      {
+        "XPath": "//label[contains(text(),'Last Name')]/following-sibling::input",
+        "Name": "Last Name Text Box",
+        "Action": "Input",
+        "Data": "Parker"
+      },
+      {
+        "XPath": "//label[contains(text(),'Company')]/following-sibling::input",
+        "Name": "Company Name Text Box",
+        "Action": "Input",
+        "Data": "Daily Bugle"
+      },
+      {
+        "XPath": "//label[contains(text(),'Email')]/following-sibling::input",
+        "Name": "Email Text Box",
+        "Action": "Input",
+        "Data": "peter.parker@dailybugle.com"
+      },
+      {
+        "XPath": "//input[@value='Submit']",
+        "Name": "Submit button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  }
+]

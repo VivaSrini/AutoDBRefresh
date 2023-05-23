@@ -1,0 +1,212 @@
+[
+  {
+    "Provider": "AL_ADECA",
+	"State": "AL",
+	"Name": "Alabama Department of Economic and Community Affairs - ADECA",
+    "Website": "http://adeca.alabama.gov/Divisions/ced/cdp/Pages/ombe.aspx",
+    "Title": "Office of Minority Business Enterprise – ADECA",
+    "Steps": [
+      {
+        "XPath": "//a[text()='OMBE certified businesses']",
+        "Name": "OMBE certified businesses Link",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "AK_AUCP",
+	"State": "AK",
+    "Name": "Alaska Unified Certification Program - AUCP",
+    "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
+    "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
+    "Steps": [
+      {
+        "XPath": "//input[@id='btnSearch']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//html",
+        "Name": "Wait for 2 seconds",
+        "Action": "Wait",
+        "Data": "2"
+      },
+      {
+        "XPath": "//button/span[text()='CSV']",
+        "Name": "CSV button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_DGS",
+	"State": "CA",
+    "Name": "California eProcure",
+    "Website": "https://caleprocure.ca.gov/pages/PublicSearch/supplier-search.aspx",
+    "Title": "The State of California Certifications",
+    "Steps": [
+      {
+        "XPath": "//button[@name='ZZ_PUBSRCH1_WRK_BUTTON']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[@id='ZZ_PUBSRCH1_WRK_DOWNLOAD_TO_FILE']",
+        "Name": "Download button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//html",
+        "Name": "Wait for 3 minutes",
+        "Action": "Wait",
+        "Data": "180"
+      },
+      {
+        "XPath": "//a[@id='downloadButton']",
+        "Name": "Download Attachment button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_LACITY_DBE",
+	"State": "CA",
+    "Name": "City of Los angels, CA",
+    "Website": "https://bca.lacity.org/CertificationListings/DBETable.php",
+    "Title": "DBE/MBE/WBE Directory",
+    "Steps": [
+      {
+        "XPath": "//button/span[text()='Excel']",
+        "Name": "Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_LACITY_SLB",
+	"State": "CA",
+    "Name": "City of Los angels, CA",
+    "Website": "https://bca.lacity.org/CertificationListings/SLBDirectory.php",
+    "Title": "SLB Directory",
+    "Steps": [
+      {
+        "XPath": "//button/span[text()='Excel']",
+        "Name": "Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_PORTOAK",
+	"State": "CA",
+    "Name": "Port of Oakland, CA",
+    "Website": "https://srd.portofoakland.com/index.aspx",
+    "Title": "Port's Social Responsibility database of certified businesses",
+    "Steps": [
+      {
+        "XPath": "//input[@name='sSearchBasic']",
+        "Name": "Search box",
+        "Action": "Input",
+        "Data": "[a-z]"
+      },
+      {
+        "XPath": "//a[@id='btn-searchbasic']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//div[@id='tb']//div/a",
+        "Name": "Export to Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "AR_EDC",
+	"State": "AR",
+    "Name": "Arkansas Economic Development Commission - AEDC",
+    "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
+    "Title": "Directory",
+    "Steps": [
+      {
+        "XPath": "//button[text()='Accept']",
+        "Name": "Accept button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@id='search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[text()='Export Filtered List']",
+        "Name": "CSV button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_SFCTA",
+    "State": "CA",
+    "Name": "San Francisco County Transportation Authority",
+    "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
+    "Title": "Work with Us | SFCTA",
+    "Steps": [
+      {
+        "XPath": "//a[contains(text(),'SFCTA Certified DBE/LBE/SBE/LGBTBE/DVBE')]",
+        "Name": "SFCTA Certified DBE/LBE/SBE/LGBTBE/DVBE",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "KS_COMMERCE",
+	"State": "KS",
+    "Name": "Kansas Department of Commerce",
+    "Website": "https://kansascommerce.my.salesforce-sites.com/mwbds/",
+    "Title": "Minority and Women Business Directory Search",
+    "Steps": [
+      {
+        "XPath": "//html",
+        "Name": "Wait for 10 seconds",
+        "Action": "Wait",
+        "Data": "10"
+      },
+      {
+        "XPath": "//button[contains(text(),'Export to Excel')]",
+        "Name": "Export to Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "NV_GOED",
+	"State": "NV",
+    "Name": "Nevada Governor's Office of Economic Development",
+    "Website": "https://goed.nv.gov/emerging-small-business-directory/",
+    "Title": "Emerging Small Business Directory - Nevada Governor's Office of Economic Development",
+    "Steps": [
+      {
+        "XPath": "//input[@id='js-esb-download']",
+        "Name": "Download CSV of the latest ESB directory",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  }
+]

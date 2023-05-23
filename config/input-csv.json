@@ -1,0 +1,446 @@
+[
+  {
+    "Provider": "AK_AUCP",
+	"State": "AK",
+    "Name": "Alaska Unified Certification Program - AUCP",	
+    "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
+    "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
+    "Steps": [
+      {
+        "XPath": "//input[@id='btnSearch']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//html",
+        "Name": "Wait for 2 seconds",
+        "Action": "Wait",
+        "Data": "2"
+      },
+      {
+        "XPath": "//button/span[text()='CSV']",
+        "Name": "CSV button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "AR_EDC",
+	"State": "AR",
+    "Name": "Arkansas Economic Development Commission - AEDC",
+    "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
+    "Title": "Directory",
+    "Steps": [
+      {
+        "XPath": "//button[text()='Accept']",
+        "Name": "Accept button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@id='search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[text()='Export Filtered List']",
+        "Name": "CSV button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_PORTOAK",
+	"State": "CA",
+    "Name": "Port of Oakland, CA",
+    "Website": "https://srd.portofoakland.com/index.aspx",
+    "Title": "Port's Social Responsibility database of certified businesses",
+    "Steps": [
+      {
+        "XPath": "//input[@name='sSearchBasic']",
+        "Name": "Search box",
+        "Action": "Input",
+        "Data": "[a-z]"
+      },
+      {
+        "XPath": "//a[@id='btn-searchbasic']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//div[@id='tb']//div/a",
+        "Name": "Export to Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "KS_COMMERCE",
+	"State": "KS",
+    "Name": "Kansas Department of Commerce",
+    "Website": "https://kansascommerce.my.salesforce-sites.com/mwbds/",
+    "Title": "DBE Directory - Iowa DOT DBE Directory",
+    "Steps": [
+      {
+        "XPath": "//button[contains(text(),'Export to Excel')]",
+        "Name": "Export to Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "LA_UCP",
+	"State": "LA",
+    "Name": "Louisiana UCP - LA UCP",
+    "Website": "http://www8.dotd.la.gov/UCP/UCPSearch.aspx",
+    "Title": "UCP Search",
+    "Steps": [
+      {
+        "XPath": "//input[@id='BtnSearch']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@id='lnkbtnExport']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "NV_GOED",
+	"State": "NV",
+    "Name": "Nevada Governor's Office of Economic Development",
+    "Website": "https://goed.nv.gov/emerging-small-business-directory/",
+    "Title": "Emerging Small Business Directory - Nevada Governor's Office of Economic Development",
+    "Steps": [
+      {
+        "XPath": "//input[@id='js-esb-download']",
+        "Name": "Download CSV of the latest ESB directory",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "PA_DOT",
+	"State": "PA",
+    "Name": "Pennsylvania DOT",
+    "Website": "https://www.dotsbe.pa.gov/SBEWeb/sbe/viewHome.do",
+    "Title": "Small Business Enterprise",
+    "Steps": [
+      {
+        "XPath": "//button[@id='search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a/span[text()='CSV']",
+        "Name": "Save as CSV link",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "TX_AUSTIN_DATA",
+	"State": "TX",
+    "Name": "City of Austin, TX",
+    "Website": "https://data.austintexas.gov/Budget-and-Finance/Current-Small-Business-Enterprise-SBE-Certfied-Ven/uxwx-55kj",
+    "Title": "Current Small Business Enterprise, SBE, Certfied Vendors | Open Data | City of Austin Texas",
+    "Steps": [
+      {
+        "XPath": "//button[text()='Export']",
+        "Name": "Export button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[text()='CSV']",
+        "Name": "CSV button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "WA_WEBS",
+	"State": "WA",
+    "Name": "Washington Electronic Business Solution",
+    "Website": "https://pr-webs-vendor.des.wa.gov/VendorSearch.aspx",
+    "Title": "Washington Electronic Business Solution",
+    "Steps": [
+      {
+        "XPath": "//input[@id='chkDiversity']",
+        "Name": "All Diversity Types checkbox",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@id='btnSearch']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@id='btnExport']",
+        "Name": "Export button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "DE_DATA_SBE",
+    "State": "DE",
+    "Name": "Delaware Open Data - Small Business",
+    "Website": "https://data.delaware.gov/api/views/trst-y7rh/rows.csv?accessType=DOWNLOAD&bom=true&format=true",
+    "Title": "Certified Vendors - Small Business Focus Program",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "DE_DATA_OSD",
+    "State": "DE",
+    "Name": "Delaware Open Data - Office of Supplier Diversity",
+    "Website": "https://data.delaware.gov/api/views/s4ev-nzhm/rows.csv?accessType=DOWNLOAD&bom=true&format=true",
+    "Title": "Certified Vendors - Office of Supplier Diversity",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "KS_DOT",
+	"State": "KS",
+    "Name": "Kansas DOT",
+    "Website": "https://kdotapp.ksdot.gov/dbecontractorlist/",
+    "Title": "Directory of Disdvantage Businesses",
+    "Steps": [
+      {
+        "XPath": "//img[@alt='Export this report']",
+        "Name": "Export this report button",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//img[@alt='Click here to access   options']",
+        "Name": "File format dropdown button",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//span[text()='Character Separated Values (CSV)']",
+        "Name": "Character Separated Values (CSV) menu option",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//a[text()='Export']",
+        "Name": "Export button",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "KY_GOV_MWBE",
+	"State": "KY",
+    "Name": "State of Kentucky",
+    "Website": "https://finance.ky.gov/office-of-the-secretary/office-of-equal-employment-opportunity-contract-compliance/minority-and-women-business-enterprise-certification-program/Pages/default.aspx",
+    "Title": "Minority & Women Business Enterprise Certification Program - Finance and Administration Cabinet",
+    "Steps": [
+      {
+        "XPath": "//a[text()='MWBE Certified Business Listing (EXCEL)']",
+        "Name": "MWBE Certified Business Listing (EXCEL) link",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "MO_DOT_ACDBE",
+	"State": "MO",
+    "Name": "Missouri DOT - MODOT",
+    "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
+    "Title": "MRCC Directory",
+    "Steps": [
+      {
+        "XPath": "//input[@value='ACDBE']",
+        "Name": "ACDBE radio button",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//button[@value='Search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//button[@value='Export']",
+        "Name": "Export button",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "MO_DOT_DBE",
+	"State": "MO",
+    "Name": "Missouri DOT - MODOT",
+    "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
+    "Title": "MRCC Directory",
+    "Steps": [
+      {
+        "XPath": "//input[@value='DBE']",
+        "Name": "Disadvantaged Business Enterprise radio button",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//button[@value='Search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//button[@value='Export']",
+        "Name": "Export button",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "MO_DOT_SBE",
+	"State": "MO",
+    "Name": "Missouri DOT - MODOT",
+    "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
+    "Title": "MRCC Directory",
+    "Steps": [
+      {
+        "XPath": "//input[@value='SBE']",
+        "Name": "Small Business Enterprise radio button",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//button[@value='Search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//button[@value='Export']",
+        "Name": "Export button",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "MN_DOA",
+	"State": "MN",
+    "Name": "Minnesota DOA",
+    "Website": "https://mn.gov/admin-stat/osp/download/vmpvendors.csv",
+    "Title": "Equity in Procurement (TG/ED/VO) Directory / Minnesota Office of State Procurement",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "MT_DOT",
+	"State": "MT",
+    "Name": "Montana DOT",
+    "Website": "https://app.mdt.mt.gov/ess-dbe/",
+    "Title": "DBE/SBE Directory",
+    "Steps": [
+      {
+        "XPath": "//button[@id='btnSubmit' and text()='Search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//button[contains(text(),'Export Grid')]",
+        "Name": "Export Grid button",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "NC_DOT_DBE",
+	"State": "NC",
+    "Name": "North Carolina DOT",
+    "Website": "https://www.ebs.nc.gov/VendorDirectory/default.html",
+    "Title": "Directory of Firms | Connect NCDOT",
+    "Steps": [
+      {
+        "XPath": "//a/div[text()='DBE Directory']/parent::node()",
+        "Name": "DBE Directory link",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "NC_DOT_SBE",
+	"State": "NC",
+    "Name": "North Carolina DOT",
+    "Website": "https://www.ebs.nc.gov/VendorDirectory/default.html",
+    "Title": "Directory of Firms | Connect NCDOT",
+    "Steps": [
+      {
+        "XPath": "//a/div[text()='SBE Directory']/parent::node()",
+        "Name": "SBE Directory link",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "OH_DOD",
+	"State": "OH",
+    "Name": "Ohio DAS",
+    "Website": "https://eodreporting.oit.ohio.gov/mbe-certification",
+    "Title": "Ohio.gov MBE Certification",
+    "Steps": [
+      {
+        "XPath": "(//button[text()='Search'])[2]",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@id='excelBtn' and text()='Export to Excel']",
+        "Name": "Export to Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "OK_TULSA",
+	"State": "OK",
+    "Name": "City of Tulsa, OK",
+    "Website": "https://www.cityoftulsa.org/developmentbusiness/small-business-enterprise-program/",
+    "Title": "City of Tulsa",
+    "Steps": [
+      {
+        "XPath": "//a[text()='SBE Directory']",
+        "Name": "SBE Directory link",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  }
+]

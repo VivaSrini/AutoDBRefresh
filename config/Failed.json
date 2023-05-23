@@ -1,0 +1,483 @@
+[
+  {
+    "Provider": "AZ_PHOENIX",
+	"State": "AZ",
+    "Name": "City of Phoenix, AZ",
+    "Website": "https://phoenix.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "City of Phoenix Certification and Contract System",
+    "Steps": [
+      {
+        "XPath": "//div[@class='recaptcha-checkbox-checkmark']",
+        "Name": "I am not a robot checkbox",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//input[@id='ButtonSearchButtonSearch']",
+        "Name": "Search button",
+        "Action": "click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "CA_SFCTA_SBE",
+	"State": "CA",
+    "Name": "San Francisco County Transportation Authority ",
+    "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
+    "Title": "Work with Us | SFCTA",
+    "Steps": [
+      {
+        "XPath": "//a[contains(text(),'I AGREE')]",
+        "Name": "Privacy Policy Link - I AGREE button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[contains(text(),'SBE and DVBE')]",
+        "Name": "SFCTA certified SBE and DVBE Link",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@name='ZZ_PUBSRCH1_WRK_BUTTON']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@aria-label='Download']",
+        "Name": "Download button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[@id='downloadButton']",
+        "Name": "Download Attachment button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_ACGOV",
+	"State": "CA",
+    "Name": "County of Alameda",
+    "Website": "https://www.acgov.org/sleb_query_app/slebmenu.jsp",
+    "Title": "SLEB Supplier Search",
+    "Steps": [
+      {
+        "XPath": "//a[contains(text(),'Advanced Search')]",
+        "Name": "Advanced Search Link",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@id='name')]",
+        "Name": "Business Name entry",
+        "Action": "Input",
+        "Data": "[a-z]"
+      },
+      {
+        "XPath": "//input[@value='Find Suppliers')]",
+        "Name": "Find Suppliers button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[@class='quicklink']",
+        "Name": "Export to Excel",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CA_OAKLAND",
+	"State": "CA",
+    "Name": "City of Oakland, CA",
+    "Website": "https://apps.oaklandca.gov/contractcompliance/Contractors.aspx",
+    "Title": "Certified Contractors",
+    "Steps": [
+      {
+        "XPath": "//a[@title='Download List']",
+        "Name": "Download List button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "FL_DOT",
+	"State": "FL",
+    "Name": "Florida DOT - FDOT",
+    "Website": "https://fdotxwp02.dot.state.fl.us/EqualOpportunityOfficeBusinessDirectory/CustomSearch.aspx",
+    "Title": "DBE Directory",
+    "Steps": [
+      {
+        "XPath": "//input[@class='ui-dialog-titlebar-close']",
+        "Name": "Dialog close button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//span[@id='recaptcha-anchor']",
+        "Name": "I'm not a robot button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@class='btnRunRptTop']",
+        "Name": "Run Report button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@value='EXCEL']",
+        "Name": "Report Format Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "FL_DUVAL",
+	"State": "FL",
+    "Name": "Duval County, FL",
+    "Website": "https://pub1.duvalschools.org/oeo-dir/",
+    "Title": "Directory - Office Of Economic Opportunity",
+    "Steps": [
+      {
+        "XPath": "//a[@id='MainContent_LbtnViewReport' and text()='Report']",
+        "Name": "Report link",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//div[@id='ctl00_MainContent_RvDirectory_ctl09_ctl04_ctl00_Menu']",
+        "XPath2": "//table[@id='ctl00_MainContent_RvDirectory_ctl09_ctl04_ctl00_Button']",
+        "XPath3": "//a[@id='ctl00_MainContent_RvDirectory_ctl09_ctl04_ctl00_ButtonLink']",
+        "XPath4": "//span[@id='ctl00_MainContent_RvDirectory_ctl09_ctl04_ctl00_ButtonImg']",
+        "XPath5": "//span[@id='ctl00_MainContent_RvDirectory_ctl09_ctl04_ctl00_ButtonImgDown']",
+        "Name": "Floppy disk button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[@title='Excel' and @alt='Excel' and text()='Excel']",
+        "Name": "Excel menu option",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "GA_DOT",
+	"State": "GA",
+    "Name": "Georgia DOT - GDOT",
+    "Website": "https://gdotbiext.dot.ga.gov/ext-bi/saw.dll?Dashboard&PortalPath=/shared/External/_portal/UCP%20Directory&Page=UCP%20Directory&Action=Navigate&Syndicate=true&anon=1",
+    "Title": "Directory_Of_Prequal-ANS - Oracle Analytics Publisher",
+    "Steps": [
+      {
+        "XPath": "//a[@name='ReportLinkMenu' and text()='Export']",
+        "Name": "Report link",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//a[@aria-label='Data']",
+        "Name": "Data menu",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//div[@id='idDownloadDataMenud:dashboard~p:grjk450rc80gpfai~r:nmn8f37kjk22a2nf']",
+        "Name": "Excel option",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "(//a[@aria-label='Excel'])[2]",
+        "Name": "Excel option",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "GA_DOT",
+	"State": "GA",
+    "Name": "Georgia DOT - GDOT",
+    "Website": "https://gdotbiext.dot.ga.gov/ext-bi/saw.dll?Dashboard&PortalPath=/shared/External/_portal/UCP%20Directory&Page=UCP%20Directory&Action=Navigate&Syndicate=true&anon=1",
+    "Title": "Oracle BI Interactive Dashboards - UCP Directory",
+    "Steps": [
+      {
+        "XPath": "//a[@name='ReportLinkMenu' and text()='Export']",
+        "Name": "Export link",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "//a/table/tbody/tr/td[text()='Data']/ancestor::A",
+        "Name": "Data Menu",
+        "Action": "Click",
+        "Data": ""
+      },
+      {
+        "XPath": "(//a/table/tbody/tr/td[text()='Excel']/ancestor::A)[2]",
+        "Name": "Excel export button",
+        "Action": "Click",
+        "Data": ""
+      }
+    ]
+  },
+  {
+    "Provider": "KY_TRANSPORT_DBE",
+	"State": "KY",
+    "Name": "Kentucky Transportation Cabinet",
+    "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-DBE-Directory.aspx",
+    "Title": "Certified DBE Directory | KYTC",
+    "Steps": [
+      {
+        "XPath": "//a[contains(text(),'View DBE Directory')]",
+        "Name": "View DBE Directory link",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[contains(@class,'buttons-excel')]",
+        "Name": "Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "KY_TRANSPORT_SBE",
+	"State": "KY",
+    "Name": "Kentucky Transportation Cabinet",
+    "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-SBE-Directory.aspx",
+    "Title": "Certified DBE Directory | KYTC",
+    "Steps": [
+      {
+        "XPath": "//button[contains(@class,'buttons-excel')]",
+        "Name": "Excel button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "MD_AACOUNTY",
+	"State": "MD",
+    "Name": "Anne Arundel County, MD",
+    "Website": "https://www.aacounty.org/services-and-programs/directory-of-minority--woman-owned-businesses",
+    "Title": "Directory of Minority & Woman-Owned Businesses | Anne Arundel County, MD",
+    "Steps": [
+      {
+        "XPath": "//button[text()='Search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[contains(@class,'pdfButton')]",
+        "Name": "Generate PDF button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "MD_BALTIMORE",
+	"State": "MD",
+    "Name": "City of Baltimore, MD",
+    "Website": "https://cityservices.baltimorecity.gov/mwboo/",
+    "Title": "",
+    "Steps": [
+      {
+        "XPath": "//a[text()='Certified MBE/WBE Directory']",
+        "Name": "Certified MBE/WBE Directory link",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "MA_BOSTON",
+	"State": "MA",
+    "Name": "City of Boston, MA",
+    "Website": "https://data.boston.gov/dataset/certified-business-directory",
+    "Title": "Certified Business Directory - Datasets - Analyze Boston",
+    "Steps": [
+      {
+        "XPath": "//a[@title='Certified Business Directory']",
+        "Name": "Certified Business Directory link",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "(//a[text()[contains(.,'Download')]])[1]",
+        "Name": "Download button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "NC_DOA",
+	"State": "NC",
+    "Name": "North Carolina DOA",
+    "Website": "https://www.ips.state.nc.us/vendor/searchvendor.aspx",
+    "Title": "Search for Vendor Information",
+    "Steps": [
+      {
+        "XPath": "//input[@value='Search']",
+        "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//input[@value='Create Excel Spreadsheet']",
+        "Name": "Create Excel Spreadsheet button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "UT_UCP",
+	"State": "UT",
+    "Name": "Utah UCP - UUCP",
+    "Website": "https://drive.google.com/file/d/1r6n4o9F14jFEqtINICrFxrfiAs9948ho/view",
+    "Title": "uucp-dbe-directory.pdf",
+    "Steps": [
+      {
+        "XPath": "//div[@aria-label='Download']",
+        "Name": "Download button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "OH_DOT_DBE",
+	"State": "OH",
+    "Name": "Ohio DOT - DBE",
+    "Website": "http://odotextrpt.dot.state.oh.us/ViewReport.aspx?reportPath=%2fprd%2fpreconstruction%2fpublic%2fextawp_dbe_directoryreport",
+    "Title": "Run Report",
+    "Steps": [
+      {
+        "XPath": "//input[@id='ReportViewer1_ctl08_ctl00' and @value='View Report']",
+        "Name": "View Report button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//span[@id='ReportViewer1_ctl09_ctl04_ctl00_ButtonImgDown']",
+        "Name": "Save (floppy) button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[@title='Excel' and text()='Excel']",
+        "Name": "Excel menu option",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "OH_DOT_SBE",
+	"State": "OH",
+    "Name": "Ohio DOT - SBE",
+    "Website": "https://odotextrpt.dot.state.oh.us/ViewReport.aspx?reportPath=%2fprd%2fpreconstruction%2fpublic%2fsbe_vendor_list",
+    "Title": "Run Report",
+    "Steps": [
+      {
+        "XPath": "//a[@id='ReportViewer1_ctl09_ctl04_ctl00_ButtonLink' and @title='Export drop down menu']",
+        "Name": "Save (floppy) button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//a[@title='Excel' and text()='Excel']",
+        "Name": "Excel menu option",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "NE_DOT",
+	"State": "NE",
+    "Name": "Nebraska DOT",
+    "Website": "https://ndorpubreports.nebraska.gov/ReportServer/Pages/ReportViewer.aspx?/AASHTOWare_Project/PreConstruction/Alpha_Certified_DBEs&rv:DocMapMode=Displayed&rv:HeaderArea=BreadCrumbsOnly",
+    "Title": "Civil Rights - Nebraska Department of Transportation",
+    "Steps": [
+      {
+        "XPath": "//div[@id='ReportViewerControl_ctl05_ctl04_ctl00']",
+        "Name": "Export drop down menu",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//div/a[text()='Excel']/parent::node()",
+        "Name": "Excel option",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CT_BRIDGEPORT_CON",
+	"State": "CT",
+    "Name": "City Hall Annex Bridgeport, CT",
+    "Website": "https://www.scribd.com/document/60631937/MBE-WBE-Vendor-List-Construction-Only",
+    "Title": "MBE/WBE Vendor List Construction Only | PDF | Bridgeport | Hartford",
+    "Steps": [
+      {
+        "XPath": "//button[contains(@class, 'download_btn') and @data-e2e='download-button']",
+        "Name": "Download Now button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "CT_BRIDGEPORT_NONCON",
+	"State": "CT",
+    "Name": "City Hall Annex Bridgeport, CT",
+    "Website": "https://www.scribd.com/document/67601266/MBE-WBE-Non-Construction-Vendor-List",
+    "Title": "MBE/WBE Non Construction Vendor List | PDF | Connecticut | Bridgeport",
+    "Steps": [
+      {
+        "XPath": "//button[contains(@class, 'download_btn') and @data-e2e='download-button']",
+        "Name": "Download Now button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  },
+  {
+    "Provider": "NY_SBS",
+	"State": "NY",
+    "Name": "City of New York, NY",
+    "Website": "https://sbsconnect.nyc.gov/certification-directory-search/",
+    "Title": "UCP Web Application - Main Page",
+    "Steps": [
+      {
+        "XPath": "//button[contains(text(),'Submit Search') and @value='Submit']",
+        "Name": "Submit Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//button[@id='export-all' and text()='Export All']",
+        "Name": "Export All button",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  }
+]
