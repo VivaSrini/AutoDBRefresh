@@ -127,9 +127,11 @@ def processFile(filename):
     html_str = re.sub(r'<td>(?=[0-9])', "<td>'", html_str)
     df1 = pd.read_html(html_str)[0]
 
-    for idx, row in df1.iterrows():
+    idx = 0
+    for _idx, row in df1.iterrows():
         dict1 = empty_dict()
-        dict1['sequence'] = prepare_csv_data(idx+1)
+        idx += 1
+        dict1['sequence'] = prepare_csv_data(idx)
         dict1['company'] = prepare_csv_data(row['Legal Business Name'])
         dict1['dba'] = prepare_csv_data(row['Doing Business As 1'])
         dict1['addr1'] = prepare_csv_data(row['Address Line 1'])

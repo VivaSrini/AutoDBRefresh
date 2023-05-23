@@ -87,7 +87,5 @@ The `input.json` file contains all the source items to be processed. Each Item w
 |-|-|
 |XPath|Xpath of the element to be acted upon|
 |Name|Name of the element to be used in log|
-|Action|**Click**: Mouse click on the element <br>**Input**: Enter data from Data field in a Textbox<br>**Tab**: Switch to next tab and continue<br>**Frame**: Switch to frame specified in 'Name'<br>**Screenshot**: Take a screenshot<br>**Verify**: Verify that element has value specified in 'Data'<br>**Wait**: Pause execution for 'Data' seconds<br>|
+|Action|<table><thead><tr><th>Verb</th><th>Description</th></tr></thead><tbody><tr><td><b>Click</b></td><td>Mouse click on the element</td></tr><tr><td><b>Input</b></td><td>Enter data from Data field in a Textbox</td></tr><tr><td><b>Tab</b></td><td>Switch to next tab and continue</td></tr><tr><td><b>Frame</b></td><td>Switch to frame specified in 'Name'</td></tr><tr><td><b>Screenshot</b></td><td>Take a screenshot</td></tr><tr><td><b>Verify</b></td><td>Verify that element has value specified in 'Data'</td></tr><tr><td><b>Wait</b></td><td>Pause execution for 'Data' seconds</td></tr></tbody></table>|
 |Data|Data to be entered in the Textbox|
-
-

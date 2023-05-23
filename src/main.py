@@ -23,11 +23,9 @@ from utilities import dict_to_csv, get_csv_header
 
 # Create a custom Error to drop out of loop
 class NextItem(Exception):
-    pass
+    def __init__(self, message):
+        self.message = message
 
-
-# Initialize error (to handle looop jump)
-next_item = NextItem()
 
 log = custom_logger.LogGen.logGen()
 log.setLevel(level=logging.DEBUG)
@@ -93,14 +91,14 @@ def take_scr_shot(prefix):
 
 
 # Update Excel sheet with status
-def update_xl_status(row, provider, run_result, filename):
-    final_result.append({'Provider': provider, 'Status': run_result, 'Filename': filename})
+def upd_XL_stat(row, provider, result, fName):
+    final_result.append({'Provider': provider, 'Status': result, 'Filename': fName})
     bg_formats = {'Success': success_format, 'Failed': failed_format, 'Skipped': skipped_format}
     ws.write(row, 0, row)
     ws.write(row, 1, provider)
-    ws.write(row, 2, run_result, bg_formats[run_result])
-    ws.write(row, 3, os.path.splitext(filename)[1][1:])
-    ws.write(row, 4, filename)
+    ws.write(row, 2, result, bg_formats[result])
+    ws.write(row, 3, os.path.splitext(fName)[1][1:] if result == "Success" else '')
+    ws.write(row, 4, fName)
 
 
 def download_all_sources():
@@ -119,21 +117,23 @@ def download_all_sources():
             file = 'ERROR: couldn\'t download'
 
             if not item["Download"].lower()[0] == 'y':
-                update_xl_status(provider=item["Provider"], run_result="Skipped", filename=item['FileName'])
+                upd_XL_stat(row=itemnum + 1, provider=item["Provider"], result="Skipped", fName="*Download Skipped*")
                 continue
 
             try:
                 # For each item, get website
                 log.info(f'Entering {item["Provider"]}...')
                 website = item['Website']
+                log.info(f'item #{itemnum + 1}/{num_items}:')
                 log.info(f'Fetching website: {website}')
                 try:
                     browser.get(website)
                 except WebDriverException as _e:
-                    log.error("UNABLE TO CONNECT TO SOURCE!")
+                    err_msg = f'UNABLE TO CONNECT TO SOURCE!'
+                    log.error(err_msg)
                     # log.exception(e)
                     take_scr_shot('ConnectionErr')
-                    raise next_item
+                    raise NextItem(err_msg)
 
                 # Read steps to be performed
                 num_steps = len(item['Steps'])
@@ -188,15 +188,17 @@ def download_all_sources():
                         log.info(f'Waiting for element {elName}')
                         WebDriverWait(browser, 60).until(EC.element_to_be_clickable((By.XPATH, elXPath)))
                     except NoSuchElementException as _n:
-                        log.error(f'No such Element: {elName}. XPath: {elXPath}')
+                        err_msg = f'No such Element: {elName}. XPath: {elXPath}'
+                        log.error(err_msg)
                         # log.exception(n)
                         take_scr_shot('NoSuchElement')
-                        raise next_item
+                        raise NextItem(err_msg)
                     except TimeoutException as _t:
-                        log.error(f'Timeout waiting for Element: {elName}. XPath: {elXPath}')
+                        err_msg = f'Timeout waiting for Element: {elName}. XPath: {elXPath}'
+                        log.error(err_msg)
                         # log.exception(t)
                         take_scr_shot('Timeout')
-                        raise next_item
+                        raise NextItem(err_msg)
                     # We could obtain element from earlier wait stmt, but it was giving error sometimes
                     # so explicit find_element following wait
                     element = browser.find_element(By.XPATH, elXPath)
@@ -208,8 +210,9 @@ def download_all_sources():
                             log.info(f'Verified successfully proceeding...')
                             continue
                         else:
-                            log.error(f'Verification failed. Value of {elXPath} is {element.text}')
-                            raise next_item
+                            err_msg = f'Verification failed. Value of {elXPath} is {element.text}'
+                            log.error(err_msg)
+                            raise NextItem(err_msg)
 
                     # In some cases, it is an array of elements, if so, get first element
                     if isinstance(element, list):
@@ -247,8 +250,9 @@ def download_all_sources():
                     curr_time = datetime.datetime.now()
                     elapsed = int((curr_time - start_time).total_seconds())
                     if elapsed > int(custom_logger.DWNL_TIMEOUT):
-                        log.info(f'Timeout ({custom_logger.DWNL_TIMEOUT}s) waiting for file download... skipping...')
-                        raise NextItem
+                        err_msg = f'Timeout ({custom_logger.DWNL_TIMEOUT}s) waiting for file download... skipping...'
+                        log.info(err_msg)
+                        raise NextItem(err_msg)
 
                     tdp = custom_logger.TEMP_DOWNLOAD_PATH
                     fdp = custom_logger.FINAL_DOWNLOAD_PATH
@@ -281,14 +285,21 @@ def download_all_sources():
                         log.info('Download completed...')
                         break
 
-                update_xl_status(itemnum + 1, item["Provider"], 'Success', file)
+                upd_XL_stat(row=itemnum + 1, provider=item["Provider"], result='Success', fName=file)
                 if switched_tab:
                     browser.close()
                     browser.switch_to.window(t0)
 
+            # Exit Ctrl+C Gracefully
+            except KeyboardInterrupt as _e:
+                err_msg = "**INTERRUPTED BY USER. EXITING PROGRAM**"
+                log.error(err_msg)
+                upd_XL_stat(row=itemnum + 1, provider=item["Provider"], result='Skipped', fName=err_msg)
+                continue
+
             # Catch errors and process next item
             except NextItem as _e:
-                update_xl_status(itemnum + 1, item["Provider"], 'Failed', str(_e))
+                upd_XL_stat(row=itemnum + 1, provider=item["Provider"], result='Failed', fName=_e.message)
                 continue
 
     finally:
