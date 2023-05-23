@@ -23,6 +23,9 @@ The `input.json` file contains all the source items to be processed. Each Item w
     "Name": "Wisconsin DOA",
     "Website": "https://wisdp.wi.gov/Search.aspx",
     "Title": "Business Search",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//span[@id='ctl00_MainContent_btnSearch']",
@@ -31,13 +34,31 @@ The `input.json` file contains all the source items to be processed. Each Item w
         "Data": "None"
       },
       {
-        "XPath": "//input[@id='ctl00_MainContent_BusinessGrid_ctl00_ctl02_ctl00_ExportToExcelButton']",
-        "Name": "Export to Excel button",
-        "Action": "Click",
-        "Data": "None"
+        "XPath": "//input[@name='sSearchBasic']",
+        "Name": "Search box",
+        "Action": "Input",
+        "Data": "[a-z]"
+      },
+	  {
+        "XPath": "//h3",
+        "Name": "",
+        "Action": "Verify",
+        "Data": "Minority and Women Owned Business Directory"
+      },
+      {
+        "XPath": "//html",
+        "Name": "Wait for 10 seconds",
+        "Action": "Wait",
+        "Data": "10"
+      },
+	  {
+        "XPath": "",
+        "Name": "",
+        "Action": "Screenshot",
+        "Data": ""
       }
     ]
-  },
+  }
   {
     "Provider": "MN_DOA",
 	"State": "MN",
@@ -66,7 +87,7 @@ The `input.json` file contains all the source items to be processed. Each Item w
 |-|-|
 |XPath|Xpath of the element to be acted upon|
 |Name|Name of the element to be used in log|
-|Action|**Click**: Mouse click on the element <br>**Input**: Enter data from Data field in a Textbox<br>**Tab**: Switch to next tab and continue<br>**Frame**: Switch to frame specified in 'Name'<br>**Screenshot**: Take a screenshot<br>**Verify**: Verify that field specified in 'Name' has value specified in 'Data' <br>**Wait**: Pause execution for 'Data' seconds<br>|
+|Action|**Click**: Mouse click on the element <br>**Input**: Enter data from Data field in a Textbox<br>**Tab**: Switch to next tab and continue<br>**Frame**: Switch to frame specified in 'Name'<br>**Screenshot**: Take a screenshot<br>**Verify**: Verify that element has value specified in 'Data'<br>**Wait**: Pause execution for 'Data' seconds<br>|
 |Data|Data to be entered in the Textbox|
 
 
