@@ -19,7 +19,7 @@ The `input.json` file contains all the source items to be processed. Each Item w
 [
   {
     "Provider": "WI_DOA",
-	"State": "WI",
+    "State": "WI",
     "Name": "Wisconsin DOA",
     "Website": "https://wisdp.wi.gov/Search.aspx",
     "Title": "Business Search",
@@ -39,7 +39,7 @@ The `input.json` file contains all the source items to be processed. Each Item w
         "Action": "Input",
         "Data": "[a-z]"
       },
-	  {
+      {
         "XPath": "//h3",
         "Name": "",
         "Action": "Verify",
@@ -51,7 +51,7 @@ The `input.json` file contains all the source items to be processed. Each Item w
         "Action": "Wait",
         "Data": "10"
       },
-	  {
+      {
         "XPath": "",
         "Name": "",
         "Action": "Screenshot",
@@ -61,7 +61,7 @@ The `input.json` file contains all the source items to be processed. Each Item w
   }
   {
     "Provider": "MN_DOA",
-	"State": "MN",
+    "State": "MN",
     "Name": "Minnesota DOA",
     "Website": "https://mn.gov/admin-stat/osp/download/vmpvendors.csv",
     "Title": "Equity in Procurement (TG/ED/VO) Directory / Minnesota Office of State Procurement",

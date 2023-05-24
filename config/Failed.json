@@ -1,7 +1,7 @@
 [
   {
     "Provider": "AZ_PHOENIX",
-	"State": "AZ",
+    "State": "AZ",
     "Name": "City of Phoenix, AZ",
     "Website": "https://phoenix.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
     "Title": "City of Phoenix Certification and Contract System",
@@ -22,7 +22,7 @@
   },
   {
     "Provider": "CA_SFCTA_SBE",
-	"State": "CA",
+    "State": "CA",
     "Name": "San Francisco County Transportation Authority ",
     "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
     "Title": "Work with Us | SFCTA",
@@ -61,7 +61,7 @@
   },
   {
     "Provider": "CA_ACGOV",
-	"State": "CA",
+    "State": "CA",
     "Name": "County of Alameda",
     "Website": "https://www.acgov.org/sleb_query_app/slebmenu.jsp",
     "Title": "SLEB Supplier Search",
@@ -94,7 +94,7 @@
   },
   {
     "Provider": "CA_OAKLAND",
-	"State": "CA",
+    "State": "CA",
     "Name": "City of Oakland, CA",
     "Website": "https://apps.oaklandca.gov/contractcompliance/Contractors.aspx",
     "Title": "Certified Contractors",
@@ -109,7 +109,7 @@
   },
   {
     "Provider": "FL_DOT",
-	"State": "FL",
+    "State": "FL",
     "Name": "Florida DOT - FDOT",
     "Website": "https://fdotxwp02.dot.state.fl.us/EqualOpportunityOfficeBusinessDirectory/CustomSearch.aspx",
     "Title": "DBE Directory",
@@ -142,7 +142,7 @@
   },
   {
     "Provider": "FL_DUVAL",
-	"State": "FL",
+    "State": "FL",
     "Name": "Duval County, FL",
     "Website": "https://pub1.duvalschools.org/oeo-dir/",
     "Title": "Directory - Office Of Economic Opportunity",
@@ -173,7 +173,7 @@
   },
   {
     "Provider": "GA_DOT",
-	"State": "GA",
+    "State": "GA",
     "Name": "Georgia DOT - GDOT",
     "Website": "https://gdotbiext.dot.ga.gov/ext-bi/saw.dll?Dashboard&PortalPath=/shared/External/_portal/UCP%20Directory&Page=UCP%20Directory&Action=Navigate&Syndicate=true&anon=1",
     "Title": "Directory_Of_Prequal-ANS - Oracle Analytics Publisher",
@@ -206,7 +206,7 @@
   },
   {
     "Provider": "GA_DOT",
-	"State": "GA",
+    "State": "GA",
     "Name": "Georgia DOT - GDOT",
     "Website": "https://gdotbiext.dot.ga.gov/ext-bi/saw.dll?Dashboard&PortalPath=/shared/External/_portal/UCP%20Directory&Page=UCP%20Directory&Action=Navigate&Syndicate=true&anon=1",
     "Title": "Oracle BI Interactive Dashboards - UCP Directory",
@@ -233,7 +233,7 @@
   },
   {
     "Provider": "KY_TRANSPORT_DBE",
-	"State": "KY",
+    "State": "KY",
     "Name": "Kentucky Transportation Cabinet",
     "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-DBE-Directory.aspx",
     "Title": "Certified DBE Directory | KYTC",
@@ -254,7 +254,7 @@
   },
   {
     "Provider": "KY_TRANSPORT_SBE",
-	"State": "KY",
+    "State": "KY",
     "Name": "Kentucky Transportation Cabinet",
     "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-SBE-Directory.aspx",
     "Title": "Certified DBE Directory | KYTC",
@@ -269,7 +269,7 @@
   },
   {
     "Provider": "MD_AACOUNTY",
-	"State": "MD",
+    "State": "MD",
     "Name": "Anne Arundel County, MD",
     "Website": "https://www.aacounty.org/services-and-programs/directory-of-minority--woman-owned-businesses",
     "Title": "Directory of Minority & Woman-Owned Businesses | Anne Arundel County, MD",
@@ -290,7 +290,7 @@
   },
   {
     "Provider": "MD_BALTIMORE",
-	"State": "MD",
+    "State": "MD",
     "Name": "City of Baltimore, MD",
     "Website": "https://cityservices.baltimorecity.gov/mwboo/",
     "Title": "",
@@ -305,7 +305,7 @@
   },
   {
     "Provider": "MA_BOSTON",
-	"State": "MA",
+    "State": "MA",
     "Name": "City of Boston, MA",
     "Website": "https://data.boston.gov/dataset/certified-business-directory",
     "Title": "Certified Business Directory - Datasets - Analyze Boston",
@@ -326,7 +326,7 @@
   },
   {
     "Provider": "NC_DOA",
-	"State": "NC",
+    "State": "NC",
     "Name": "North Carolina DOA",
     "Website": "https://www.ips.state.nc.us/vendor/searchvendor.aspx",
     "Title": "Search for Vendor Information",
@@ -347,7 +347,7 @@
   },
   {
     "Provider": "UT_UCP",
-	"State": "UT",
+    "State": "UT",
     "Name": "Utah UCP - UUCP",
     "Website": "https://drive.google.com/file/d/1r6n4o9F14jFEqtINICrFxrfiAs9948ho/view",
     "Title": "uucp-dbe-directory.pdf",
@@ -362,7 +362,7 @@
   },
   {
     "Provider": "OH_DOT_DBE",
-	"State": "OH",
+    "State": "OH",
     "Name": "Ohio DOT - DBE",
     "Website": "http://odotextrpt.dot.state.oh.us/ViewReport.aspx?reportPath=%2fprd%2fpreconstruction%2fpublic%2fextawp_dbe_directoryreport",
     "Title": "Run Report",
@@ -389,7 +389,7 @@
   },
   {
     "Provider": "OH_DOT_SBE",
-	"State": "OH",
+    "State": "OH",
     "Name": "Ohio DOT - SBE",
     "Website": "https://odotextrpt.dot.state.oh.us/ViewReport.aspx?reportPath=%2fprd%2fpreconstruction%2fpublic%2fsbe_vendor_list",
     "Title": "Run Report",
@@ -410,7 +410,7 @@
   },
   {
     "Provider": "NE_DOT",
-	"State": "NE",
+    "State": "NE",
     "Name": "Nebraska DOT",
     "Website": "https://ndorpubreports.nebraska.gov/ReportServer/Pages/ReportViewer.aspx?/AASHTOWare_Project/PreConstruction/Alpha_Certified_DBEs&rv:DocMapMode=Displayed&rv:HeaderArea=BreadCrumbsOnly",
     "Title": "Civil Rights - Nebraska Department of Transportation",
@@ -431,7 +431,7 @@
   },
   {
     "Provider": "CT_BRIDGEPORT_CON",
-	"State": "CT",
+    "State": "CT",
     "Name": "City Hall Annex Bridgeport, CT",
     "Website": "https://www.scribd.com/document/60631937/MBE-WBE-Vendor-List-Construction-Only",
     "Title": "MBE/WBE Vendor List Construction Only | PDF | Bridgeport | Hartford",
@@ -446,7 +446,7 @@
   },
   {
     "Provider": "CT_BRIDGEPORT_NONCON",
-	"State": "CT",
+    "State": "CT",
     "Name": "City Hall Annex Bridgeport, CT",
     "Website": "https://www.scribd.com/document/67601266/MBE-WBE-Non-Construction-Vendor-List",
     "Title": "MBE/WBE Non Construction Vendor List | PDF | Connecticut | Bridgeport",
@@ -461,7 +461,7 @@
   },
   {
     "Provider": "NY_SBS",
-	"State": "NY",
+    "State": "NY",
     "Name": "City of New York, NY",
     "Website": "https://sbsconnect.nyc.gov/certification-directory-search/",
     "Title": "UCP Web Application - Main Page",

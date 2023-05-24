@@ -1,8 +1,8 @@
 [
   {
     "Provider": "AL_ADECA",
-	"State": "AL",
-	"Name": "Alabama Department of Economic and Community Affairs - ADECA",
+    "State": "AL",
+    "Name": "Alabama Department of Economic and Community Affairs - ADECA",
     "Website": "http://adeca.alabama.gov/Divisions/ced/cdp/Pages/ombe.aspx",
     "Title": "Office of Minority Business Enterprise – ADECA",
     "Steps": [
@@ -16,8 +16,8 @@
   },
   {
     "Provider": "AK_AUCP",
-	"State": "AK",
-    "Name": "Alaska Unified Certification Program - AUCP",	
+    "State": "AK",
+    "Name": "Alaska Unified Certification Program - AUCP",
     "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
     "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
     "Steps": [
@@ -43,7 +43,7 @@
   },
   {
     "Provider": "AR_EDC",
-	"State": "AR",
+    "State": "AR",
     "Name": "Arkansas Economic Development Commission - AEDC",
     "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
     "Title": "Directory",
@@ -70,7 +70,7 @@
   },
   {
     "Provider": "CA_DGS",
-	"State": "CA",
+    "State": "CA",
     "Name": "California DGS",
     "Website": "https://caleprocure.ca.gov/pages/index.aspx",
     "Title": "California State Government Marketplace",
@@ -103,7 +103,7 @@
   },
   {
     "Provider": "CA_LACITY_DBE",
-	"State": "CA",
+    "State": "CA",
     "Name": "City of Los angels, CA",
     "Website": "https://bca.lacity.org/CertificationListings/DBETable.php",
     "Title": "DBE/MBE/WBE Directory",
@@ -118,7 +118,7 @@
   },
   {
     "Provider": "CA_LACITY_SLB",
-	"State": "CA",
+    "State": "CA",
     "Name": "City of Los angels, CA",
     "Website": "https://bca.lacity.org/CertificationListings/SLBDirectory.php",
     "Title": "SLB Directory",
@@ -133,7 +133,7 @@
   },
   {
     "Provider": "CA_PORTOAK",
-	"State": "CA",
+    "State": "CA",
     "Name": "Port of Oakland, CA",
     "Website": "https://srd.portofoakland.com/index.aspx",
     "Title": "Port's Social Responsibility database of certified businesses",
@@ -160,7 +160,7 @@
   },
   {
     "Provider": "CA_SFCTA_LGBTE",
-	"State": "CA",
+    "State": "CA",
     "Name": "San Francisco County Transportation Authority",
     "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
     "Title": "Work with Us | SFCTA",
@@ -175,7 +175,7 @@
   },
   {
     "Provider": "CO_DENVER_RTD",
-	"State": "CO",
+    "State": "CO",
     "Name": "Colorado Regional Transportation District",
     "Website": "https://www.rtd-denver.com/business-center/dbesbe#sbe-directory",
     "Title": "DBE/SBE Program | RTD - Denver",
@@ -190,7 +190,7 @@
   },
   {
     "Provider": "CT_BIZNET_SD",
-	"State": "CT",
+    "State": "CT",
     "Name": "State of Connecticut",
     "Website": "https://biznet.ct.gov/SDSearch/SDSearch.aspx",
     "Title": "Company Search",
@@ -211,7 +211,7 @@
   },
   {
     "Provider": "CT_BRIDGEPORT",
-	"State": "CT",
+    "State": "CT",
     "Name": "City of Bridgeport, CT",
     "Website": "https://www.bridgeportct.gov/smbe",
     "Title": "Small & Minority Business Enterprise - Bridgeport, CT",
@@ -226,7 +226,7 @@
   },
   {
     "Provider": "DC_DSLBD",
-	"State": "DC",
+    "State": "DC",
     "Name": "District of columbia - DSLBD",
     "Website": "https://dslbd.secure.force.com/public/",
     "Title": "DC.gov DSLBD",
@@ -241,7 +241,7 @@
   },
   {
     "Provider": "FL_PALMBEACH",
-	"State": "FL",
+    "State": "FL",
     "Name": "Palm Beach County, FL",
     "Website": "https://www.pbcgov.org/pbcvendors",
     "Title": "Palm Beach County Vendor Search",
@@ -280,7 +280,7 @@
   },
   {
     "Provider": "GA_SAVANNAH",
-	"State": "GA",
+    "State": "GA",
     "Name": "City of Savannah, GA",
     "Website": "https://www.savannahga.gov/DocumentCenter/View/23890/February-11-2022-LDBE-MWBE-Listing_2",
     "Title": "Directory - Office Of Economic Opportunity",
@@ -289,7 +289,7 @@
   },
   {
     "Provider": "GA_CHATHAM",
-	"State": "GA",
+    "State": "GA",
     "Name": "Chatham County, GA",
     "Website": "https://cccdn.blob.core.windows.net/cdn/Files/MWBE/mwbe_list.pdf",
     "Title": "M/WBE Directory",
@@ -298,7 +298,7 @@
   },
   {
     "Provider": "IA_TSB",
-	"State": "IA",
+    "State": "IA",
     "Name": "Iowa TSB",
     "Website": "https://iowaeda.microsoftcrmportals.com/tsb-search/",
     "Title": "Search the Targeted Small Business Directory - Iowa EDA Portal",
@@ -325,7 +325,7 @@
   },
   {
     "Provider": "IA_DOT",
-	"State": "IA",
+    "State": "IA",
     "Name": "Iowa DOT",
     "Website": "https://secure.iowadot.gov/DBE/Home/Index/",
     "Title": "DBE Directory - Iowa DOT DBE Directory",
@@ -352,7 +352,7 @@
   },
   {
     "Provider": "IL_DOT",
-	"State": "IL",
+    "State": "IL",
     "Name": "Illinois DOT - IDOT",
     "Website": "https://webapps.dot.illinois.gov/UCP/ExternalSearch",
     "Title": "UCP Search",
@@ -373,7 +373,7 @@
   },
   {
     "Provider": "IN_DOA",
-	"State": "IN",
+    "State": "IN",
     "Name": "Indiana DOA",
     "Website": "https://www.in.gov/idoa/mwbe/minority-and-womens-business-enterprises/certified-business-search/",
     "Title": "IDOA: Division of Supplier Diversity: Certified Business Search",
@@ -388,7 +388,7 @@
   },
   {
     "Provider": "IN_INDY",
-	"State": "IN",
+    "State": "IN",
     "Name": "City of Indianapolis, IN",
     "Website": "https://www.indy.gov/activity/find-omwbd-contractor",
     "Title": "indy.gov: Work with an OMWBD Certified Vendor",
@@ -403,7 +403,7 @@
   },
   {
     "Provider": "KS_COMMERCE",
-	"State": "KS",
+    "State": "KS",
     "Name": "Kansas Department of Commerce",
     "Website": "https://kansascommerce.my.salesforce-sites.com/mwbds/",
     "Title": "DBE Directory - Iowa DOT DBE Directory",
@@ -424,7 +424,7 @@
   },
   {
     "Provider": "LA_HANO",
-	"State": "LA",
+    "State": "LA",
     "Name": "Housing Authority Of New Orleans",
     "Website": "http://www.hano.org/VendorRegistration/List",
     "Title": "Certified Vendors",
@@ -439,7 +439,7 @@
   },
   {
     "Provider": "LA_UCP",
-	"State": "LA",
+    "State": "LA",
     "Name": "Louisiana UCP - LA UCP",
     "Website": "http://www8.dotd.la.gov/UCP/UCPSearch.aspx",
     "Title": "UCP Search",
@@ -460,7 +460,7 @@
   },
   {
     "Provider": "MA_CAMBRIDGE",
-	"State": "MA",
+    "State": "MA",
     "Name": "City of Cambridge, MA",
     "Website": "https://www.cambridgema.gov/~/media/Files/CDD/EconDev/MWBD/cambridgebusinessdiversitydirectory_current.ashx",
     "Title": "",
@@ -469,7 +469,7 @@
   },
   {
     "Provider": "MD_CHARLES_MWBE",
-	"State": "MD",
+    "State": "MD",
     "Name": "Charles County, MD",
     "Website": "https://www.meetcharlescounty.com/local-minority-business-programs/",
     "Title": "Minority Business Programs | Charles County, Maryland | Charles County Economic Development",
@@ -484,7 +484,7 @@
   },
   {
     "Provider": "MD_CHARLES_SLBE",
-	"State": "MD",
+    "State": "MD",
     "Name": "Charles County, MD",
     "Website": "https://www.meetcharlescounty.com/local-minority-business-programs/",
     "Title": "Minority Business Programs | Charles County, Maryland | Charles County Economic Development",
@@ -499,7 +499,7 @@
   },
   {
     "Provider": "ME_DOT",
-	"State": "ME",
+    "State": "ME",
     "Name": "Maine DOT - MDOT",
     "Website": "https://www.maine.gov/mdot/civilrights/dbe/",
     "Title": "DBE Information",
@@ -520,7 +520,7 @@
   },
   {
     "Provider": "MI_KALAMAZOO",
-	"State": "MI",
+    "State": "MI",
     "Name": "Kalamazoo County, MI",
     "Website": "https://www.kalcounty.com/purchasing/mbe_directory.htm",
     "Title": "MBE/WBE County Directory - Purchasing Department - Kalamazoo Michigan County Government Web Site",
@@ -535,7 +535,7 @@
   },
   {
     "Provider": "MI_UCP",
-	"State": "MI",
+    "State": "MI",
     "Name": "Michigan UCP",
     "Website": "https://mdotjboss.state.mi.us/MUCPWeb/search.htm",
     "Title": "MDOT MUCP Public Application",
@@ -556,7 +556,7 @@
   },
   {
     "Provider": "MO_COLUMBIA",
-	"State": "MO",
+    "State": "MO",
     "Name": "City of Columbia, MO",
     "Website": "https://www.como.gov/CMS/mwob-directory/public.php",
     "Title": "Minority and Women Owned Business Directory - City of Columbia Missouri",
@@ -571,7 +571,7 @@
   },
   {
     "Provider": "MS_DEV_AUTH",
-	"State": "MS",
+    "State": "MS",
     "Name": "Mississippi Development Authority",
     "Website": "https://minority.mississippi.org/DirectorySearch.aspx",
     "Title": "Mississippi Development Authority | Mighty Mississippi",
@@ -592,7 +592,7 @@
   },
   {
     "Provider": "MS_UCP",
-	"State": "MS",
+    "State": "MS",
     "Name": "Mississippi UCP",
     "Website": "https://mdot.ms.gov/bidsystem_data/bidderspdf/DBE%20Listing.pdf",
     "Title": "",
@@ -601,7 +601,7 @@
   },
   {
     "Provider": "NE_OMAHA",
-	"State": "NE",
+    "State": "NE",
     "Name": "City of Omaha, NE",
     "Website": "https://humanrights.cityofomaha.org/excel-report",
     "Title": "Excel Report - Omaha Human Rights and Relations",
@@ -616,7 +616,7 @@
   },
   {
     "Provider": "NH_DOT",
-	"State": "NH",
+    "State": "NH",
     "Name": "New Hampshire DOT Department of Transportation",
     "Website": "https://www.nh.gov/dot/org/administration/ofc/documents/dbe-directory.pdf",
     "Title": "",
@@ -625,7 +625,7 @@
   },
   {
     "Provider": "NJ_STATE",
-	"State": "NJ",
+    "State": "NJ",
     "Name": "State of New Jersey",
     "Website": "https://www.state.nj.us/transportation/business/civilrights/pdf/ESBEDirectory.pdf",
     "Title": "",
@@ -634,7 +634,7 @@
   },
   {
     "Provider": "NV_LASVEGAS",
-	"State": "NV",
+    "State": "NV",
     "Name": "City of Las Vegas, NV",
     "Website": "https://files.lasvegasnevada.gov/purchasing/Diverse-Business-Directory.pdf",
     "Title": "",
@@ -643,7 +643,7 @@
   },
   {
     "Provider": "NV_GOED",
-	"State": "NV",
+    "State": "NV",
     "Name": "Nevada Governor's Office of Economic Development",
     "Website": "https://goed.nv.gov/emerging-small-business-directory/",
     "Title": "Emerging Small Business Directory - Nevada Governor's Office of Economic Development",
@@ -658,7 +658,7 @@
   },
   {
     "Provider": "NY_ALBANY",
-	"State": "NY",
+    "State": "NY",
     "Name": "City of Albany, NY",
     "Website": "https://www.albanyny.gov/332/Minority-Women-Owned-Business-Enterprise",
     "Title": "Minority / Women-Owned Business Enterprises (MWBE) | Albany, NY",
@@ -673,7 +673,7 @@
   },
   {
     "Provider": "NY_OGS",
-	"State": "NY",
+    "State": "NY",
     "Name": "State of New York OGS",
     "Website": "https://online.ogs.ny.gov/SDVOB/search/Home/ExportToExcel?county_id=0&category_id=0&centralized=No",
     "Title": "",
@@ -682,7 +682,7 @@
   },
   {
     "Provider": "NY_ROCHESTER",
-	"State": "NY",
+    "State": "NY",
     "Name": "City of Rochester, NY",
     "Website": "https://www.cityofrochester.gov/mwbe/",
     "Title": "City of Rochester | Minority and Women-owned Business Enterprises (MWBE)",
@@ -697,7 +697,7 @@
   },
   {
     "Provider": "NY_SCA",
-	"State": "NY",
+    "State": "NY",
     "Name": "New York City School Construction Authority ",
     "Website": "https://dobusiness.nycsca.org/Supplier/SearchCertifiedSupplier.aspx?type=base&linkType=Contract",
     "Title": "NYCSCA - Supplier Portal",
@@ -718,7 +718,7 @@
   },
   {
     "Provider": "NY_SYRACUSE",
-	"State": "NY",
+    "State": "NY",
     "Name": "City of Syracuse, NY",
     "Website": "http://www.syrgov.net/supplier_diversity_directory.aspx",
     "Title": "City of Syracuse",
@@ -733,7 +733,7 @@
   },
   {
     "Provider": "OH_TOLEDO_MBE",
-	"State": "OH",
+    "State": "OH",
     "Name": "City of Toledo, OH",
     "Website": "https://toledo.oh.gov/business/how-to-do-business-with-the-city/mbe-wbe",
     "Title": "City of Toledo | MBE/WBE",
@@ -748,7 +748,7 @@
   },
   { 
     "Provider": "OH_TOLEDO_WBE",
-	"State": "OH",
+    "State": "OH",
     "Name": "City of Toledo, OH",
     "Website": "https://toledo.oh.gov/business/how-to-do-business-with-the-city/mbe-wbe",
     "Title": "City of Toledo | MBE/WBE",
@@ -763,7 +763,7 @@
   },
   {
     "Provider": "PA_DGS",
-	"State": "PA",
+    "State": "PA",
     "Name": "Pennsylvania DGS",
     "Website": "https://www.dgs.internet.state.pa.us/suppliersearch",
     "Title": "DGS - Supplier Search",
@@ -778,7 +778,7 @@
   },
   {
     "Provider": "PA_DOT",
-	"State": "PA",
+    "State": "PA",
     "Name": "Pennsylvania DOT",
     "Website": "https://www.dotsbe.pa.gov/SBEWeb/sbe/viewHome.do",
     "Title": "Small Business Enterprise",
@@ -799,7 +799,7 @@
   },
   {
     "Provider": "RI_DEDI",
-	"State": "RI",
+    "State": "RI",
     "Name": "Rhode Island DOA",
     "Website": "https://datadoa.ri.gov/dedi/mbeco/dl-mbewbe-entiredirectory.php",
     "Title": "MBE/WBE Directory Search | Rhode Island Office of Division of Equity Diversity and Inclusion",
@@ -808,7 +808,7 @@
   },
   {
     "Provider": "SC_CHARLESTON",
-	"State": "SC",
+    "State": "SC",
     "Name": "City of Charleston, SC",
     "Website": "https://www.charleston-sc.gov/127/Minority-Women-Owned-Business-Enterprise",
     "Title": "Minority & Women-Owned Business Enterprise Office | Charleston, SC - Official Website",
@@ -823,7 +823,7 @@
   },
   {
     "Provider": "SC_COLUMBIA_CDBE",
-	"State": "SC",
+    "State": "SC",
     "Name": "City of Columbia, SC",
     "Website": "https://obo.columbiasc.gov/contractor-supplier-diversity/smwbe/",
     "Title": "Columbia Disadvantaged Business Enterprise Program (CDBE) - City of Columbia OBO",
@@ -838,7 +838,7 @@
   },
   {
     "Provider": "SC_COLUMBIA_DBE",
-	"State": "SC",
+    "State": "SC",
     "Name": "City of Columbia, SC",
     "Website": "https://obo.columbiasc.gov/contractor-supplier-diversity/smwbe/",
     "Title": "Columbia Disadvantaged Business Enterprise Program (CDBE) - City of Columbia OBO",
@@ -853,7 +853,7 @@
   },
   {
     "Provider": "SD_DOT",
-	"State": "SD",
+    "State": "SD",
     "Name": "South Dakota DOT - SDDOT",
     "Website": "https://dot.sd.gov/doing-business/contractors/dbe",
     "Title": "DBE - South Dakota Department of Transportation",
@@ -874,7 +874,7 @@
   },
   {
     "Provider": "TN_KNOXVILLE",
-	"State": "TN",
+    "State": "TN",
     "Name": "City of Knoxville, TN",
     "Website": "https://www.knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11078433",
     "Title": "Diversity Business Directory - City of Knoxville",
@@ -889,7 +889,7 @@
   },
   {
     "Provider": "TN_NASHVILLE",
-	"State": "TN",
+    "State": "TN",
     "Name": "City of Nashville, TN",
     "Website": "http://www.nashville-mdha.org/diversity-business-enterprise-program/",
     "Title": "Metropolitan Development and Housing Agency | DIVERSITY BUSINESS ENTERPRISE PROGRAM",
@@ -904,7 +904,7 @@
   },
   {
     "Provider": "TN_UCP",
-	"State": "TN",
+    "State": "TN",
     "Name": "Tennessee UCP - TN UCP",
     "Website": "https://www.tdot.tn.gov/APPLICATIONS/DBEDirect/",
     "Title": "Index",
@@ -925,7 +925,7 @@
   },
   {
     "Provider": "TX_AUSTIN_DATA",
-	"State": "TX",
+    "State": "TX",
     "Name": "City of Austin, TX",
     "Website": "https://data.austintexas.gov/Budget-and-Finance/Current-Small-Business-Enterprise-SBE-Certfied-Ven/uxwx-55kj",
     "Title": "Current Small Business Enterprise, SBE, Certfied Vendors | Open Data | City of Austin Texas",
@@ -946,7 +946,7 @@
   },
   {
     "Provider": "TX_AUSTIN_FIN",
-	"State": "TX",
+    "State": "TX",
     "Name": "City of Austin, TX",
     "Website": "https://financeonline.austintexas.gov/afo/account_services/search/vendors/certvendor.cfm",
     "Title": "Austin Finance Online",
@@ -967,7 +967,7 @@
   },
   {
     "Provider": "VT_AOT_DBE",
-	"State": "VT",
+    "State": "VT",
     "Name": "Vtrans - Vermont Agency of Transportation",
     "Website": "https://vtrans.vermont.gov/civil-rights/doing-business/dbe-center/directory",
     "Title": "DBE Directory | Agency of Transportation",
@@ -988,7 +988,7 @@
   },
   {
     "Provider": "VT_AOT_SB",
-	"State": "VT",
+    "State": "VT",
     "Name": "Vtrans - Vermont Agency of Transportation",
     "Website": "https://vtrans.vermont.gov/civil-rights/doing-business/small-business-center/directory",
     "Title": "Small Business Directory | Agency of Transportation",
@@ -1009,7 +1009,7 @@
   },
   {
     "Provider": "VT_BGS",
-	"State": "VT",
+    "State": "VT",
     "Name": "State of Vermont - Department of Buildings & General Services (BGS)",
     "Website": "https://bgs.vermont.gov/facilities/forms/minority-women",
     "Title": "Minority and Women Owned Business Enterprises | Buildings and General Services",
@@ -1024,7 +1024,7 @@
   },
   {
     "Provider": "WA_WEBS",
-	"State": "WA",
+    "State": "WA",
     "Name": "Washington Electronic Business Solution",
     "Website": "https://pr-webs-vendor.des.wa.gov/VendorSearch.aspx",
     "Title": "Washington Electronic Business Solution",
@@ -1051,7 +1051,7 @@
   },
   {
     "Provider": "WI_DOT",
-	"State": "WI",
+    "State": "WI",
     "Name": "Wisconsin DOT",
     "Website": "https://wisconsindot.gov/Pages/doing-bus/civil-rights/dbe/certified-firms.aspx",
     "Title": "Wisconsin Department of Transportation Unified Certification Program (UCP) DBE certified firms",
@@ -1061,12 +1061,12 @@
         "Name": "Access the UCP Directory link",
         "Action": "Click",
         "Data": "None"
-      }	
+      }
     ]
   },
   {
     "Provider": "WI_MADISON_MBE",
-	"State": "WI",
+    "State": "WI",
     "Name": "City of Madison, WI",
     "Website": "https://www.cityofmadison.com/civil-rights/contract-compliance/targeted-business-enterprise-programs/directories",
     "Title": "Directories | Civil Rights, City of Madison, Wisconsin",
@@ -1076,12 +1076,12 @@
         "Name": "Minority Business Enterprise Directory link",
         "Action": "Click",
         "Data": "None"
-      }	
+      }
     ]
   },
   {
     "Provider": "WI_MADISON_SBE",
-	"State": "WI",
+    "State": "WI",
     "Name": "City of Madison, WI",
     "Website": "https://www.cityofmadison.com/civil-rights/contract-compliance/targeted-business-enterprise-programs/directories",
     "Title": "Directories | Civil Rights, City of Madison, Wisconsin",
@@ -1091,12 +1091,12 @@
         "Name": "Small Business Enterprise Directory link",
         "Action": "Click",
         "Data": "None"
-      }	
+      }
     ]
   },
   {
     "Provider": "WI_MADISON_WBE",
-	"State": "WI",	
+    "State": "WI",
     "Name": "City of Madison, WI",
     "Website": "https://www.cityofmadison.com/civil-rights/contract-compliance/targeted-business-enterprise-programs/directories",
     "Title": "Directories | Civil Rights, City of Madison, Wisconsin",
@@ -1106,12 +1106,12 @@
         "Name": "Women Business Enterprise Directory link",
         "Action": "Click",
         "Data": "None"
-      }	
+      }
     ]
   },
   {
     "Provider": "WV_DOT",
-	"State": "WV",
+    "State": "WV",
     "Name": "West Virginia DOT",
     "Website": "https://transportation.wv.gov/crc/DBE/Pages/default.aspx",
     "Title": "Disadvantaged Business Enterprise Program",
@@ -1121,12 +1121,12 @@
         "Name": "Contractor Report link",
         "Action": "Click",
         "Data": "None"
-      }	
+      }
     ]
   },
   {
     "Provider": "WV_SWAM",
-	"State": "WV",
+    "State": "WV",
     "Name": "State of West Virginia",
     "Website": "http://www.state.wv.us/admin/purchase/WVSWAM.pdf",
     "Title": "West Virginia Purchasing Division",
@@ -1135,7 +1135,7 @@
   },
   {
     "Provider": "AL_UCP",
-	"State": "AL",
+    "State": "AL",
     "Name": "Alabama UCP",
     "Website": "https://cpmsapps2.dot.state.al.us/alucp/home",
     "Title": "Alabama UCP",
@@ -1156,7 +1156,7 @@
   },
   {
     "Provider": "CA_DOT",
-	"State": "CA",
+    "State": "CA",
     "Name": "California DOT",
     "Website": " https://ucp.dot.ca.gov/licenseForm.htm",
     "Title": "UCP Web Application - Main Page",
@@ -1177,7 +1177,7 @@
   },
   {
     "Provider": "CA_LA_MTA",
-	"State": "CA",
+    "State": "CA",
     "Name": "Los Angeles County Metro Trans Authority",
     "Website": "http://smallbusinessquery.metro.net/main",
     "Title": "Diversity & Economic Opportunity - LA Metro",
@@ -1210,7 +1210,7 @@
   },
   {
     "Provider": "CA_SFO",
-	"State": "CA",
+    "State": "CA",
     "Name": "City and County of San Francisco, CA",
     "Website": "http://mission.sfgov.org/hrc_certification/SEARCH.aspx",
     "Title": "DIRECTORY OF LBE, LBE-PUC AND NPE CERTIFIED FIRMS",
@@ -1260,7 +1260,7 @@
     "Website": "https://www.browardschools.com/Page/59879",
     "Title": "Certified Vendors - Small Business Focus Program",
     "Steps": [
-	  {
+      {
         "XPath": "//div[@class='ui-article-description']/span/span/p[4]/span/a",
         "Name": "Download here link",
         "Action": "Click",
@@ -1270,7 +1270,7 @@
   },
   {
     "Provider": "FL_JSEB",
-	"State": "FL",
+    "State": "FL",
     "Name": "City of Jacksonville Small and Emerging Businesses (JSEB)",
     "Website": " https://jaxseb.coj.net/",
     "Title": "JSEB Vendor Search",
@@ -1285,7 +1285,7 @@
   },
   {
     "Provider": "GA_CCWA",
-	"State": "GA",
+    "State": "GA",
     "Name": "Clayton County Water Authority - CCWA",
     "Website": "https://www.ccwa.us/smalllocal-business-program/slbe-certified-list/",
     "Title": "SLBE Certified List – Clayton County Water Authority",
@@ -1300,7 +1300,7 @@
   },
   {
     "Provider": "GA_CLAYTON",
-	"State": "GA",
+    "State": "GA",
     "Name": "Clayton County, GA",
     "Website": "https://www.claytoncountyga.gov/government/central-services/c-vap-clayton-vendor-access-portal-vendor-self-service/",
     "Title": "C-VAP (Clayton Vendor Access Portal) Vendor Self Service | Clayton County, Georgia",
@@ -1315,7 +1315,7 @@
   },
   {
     "Provider": "IN_DOT",
-	"State": "IN",
+    "State": "IN",
     "Name": "Indiana DIT - INDOT",
     "Website": "https://entapps.indot.in.gov/dbelocator/",
     "Title": "",
@@ -1336,7 +1336,7 @@
   },
   {
     "Provider": "KS_DOT",
-	"State": "KS",
+    "State": "KS",
     "Name": "Kansas DOT",
     "Website": "https://kdotapp.ksdot.gov/dbecontractorlist/",
     "Title": "Directory of Disdvantage Businesses",
@@ -1369,7 +1369,7 @@
   },
   {
     "Provider": "KY_GOV_MWBE",
-	"State": "KY",
+    "State": "KY",
     "Name": "State of Kentucky",
     "Website": "https://finance.ky.gov/office-of-the-secretary/office-of-equal-employment-opportunity-contract-compliance/minority-and-women-business-enterprise-certification-program/Pages/default.aspx",
     "Title": "Minority & Women Business Enterprise Certification Program - Finance and Administration Cabinet",
@@ -1384,7 +1384,7 @@
   },
   {
     "Provider": "KY_GOV_SDVOSB",
-	"State": "KY",
+    "State": "KY",
     "Name": "State of Kentucky",
     "Website": "https://finance.ky.gov/office-of-the-secretary/office-of-equal-employment-opportunity-contract-compliance/sdvosb/Pages/default.aspx",
     "Title": "Minority & Women Business Enterprise Certification Program - Finance and Administration Cabinet",
@@ -1399,7 +1399,7 @@
   },
   {
     "Provider": "KY_TRANSPORT_DBE",
-	"State": "KY",
+    "State": "KY",
     "Name": "Kentucky Transportation Cabinet",
     "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-DBE-Directory.aspx",
     "Title": "Certified DBE Directory | KYTC",
@@ -1426,7 +1426,7 @@
   },
   {
     "Provider": "KY_TRANSPORT_SBE",
-	"State": "KY",
+    "State": "KY",
     "Name": "Kentucky Transportation Cabinet",
     "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-SBE-Directory.aspx",
     "Title": "Certified DBE Directory | KYTC",
@@ -1447,8 +1447,8 @@
   },
   {
     "Provider": "LA_DOTD_DBE",
-	"State": "LA",
-	"Name": "Lousiana Department of Transportation and Development",
+    "State": "LA",
+    "Name": "Lousiana Department of Transportation and Development",
     "Website": "http://wwwapps.dotd.la.gov/engineering/lettings/dbe_directory.aspx",
     "Title": "La DOTD - Compliance Programs",
     "Steps": [
@@ -1479,7 +1479,7 @@
     "Website": "https://smallbiz.louisianaeconomicdevelopment.com/search/",
     "Title": "Search Certified Businesses - LOUISIANA SMALLBIZ SYSTEM",
     "Steps": [
-	  {
+      {
         "XPath": "//input[@value='Export Data to Excel']",
         "Name": "Export to Excel button",
         "Action": "Click",
@@ -1489,7 +1489,7 @@
   },
   {
     "Provider": "MA_BOSTON",
-	"State": "MA",
+    "State": "MA",
     "Name": "City of Boston, MA",
     "Website": "https://data.boston.gov/dataset/certified-business-directory",
     "Title": "Certified Business Directory - Datasets - Analyze Boston",
@@ -1510,7 +1510,7 @@
   },
   {
     "Provider": "MA_SDO_ACDBE",
-	"State": "MA",
+    "State": "MA",
     "Name": "Massachusetts Supplier Diversity Office - MA SDO",
     "Website": "https://www.diversitycertification.mass.gov/BusinessDirectory/BusinessDirectoryDownload.aspx",
     "Title": "SDO",
@@ -1531,7 +1531,7 @@
   },
   {
     "Provider": "MA_SDO_DBE",
-	"State": "MA",
+    "State": "MA",
     "Name": "Massachusetts Supplier Diversity Office - MA SDO",
     "Website": "https://www.diversitycertification.mass.gov/BusinessDirectory/BusinessDirectoryDownload.aspx",
     "Title": "SDO",
@@ -1552,7 +1552,7 @@
   },
   {
     "Provider": "MA_SDO_SDO",
-	"State": "MA",
+    "State": "MA",
     "Name": "Massachusetts Supplier Diversity Office - MA SDO",
     "Website": "https://www.diversitycertification.mass.gov/BusinessDirectory/BusinessDirectoryDownload.aspx",
     "Title": "SDO",
@@ -1573,7 +1573,7 @@
   },
   {
     "Provider": "MO_DOT_ACDBE",
-	"State": "MO",
+    "State": "MO",
     "Name": "Missouri DOT - MODOT",
     "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
     "Title": "MRCC Directory",
@@ -1600,7 +1600,7 @@
   },
   {
     "Provider": "MO_DOT_DBE",
-	"State": "MO",
+    "State": "MO",
     "Name": "Missouri DOT - MODOT",
     "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
     "Title": "MRCC Directory",
@@ -1627,7 +1627,7 @@
   },
   {
     "Provider": "MO_DOT_SBE",
-	"State": "MO",
+    "State": "MO",
     "Name": "Missouri DOT - MODOT",
     "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
     "Title": "MRCC Directory",
@@ -1654,7 +1654,7 @@
   },
   {
     "Provider": "MO_MOEO",
-	"State": "MO",
+    "State": "MO",
     "Name": "Missouri Office of Equal Opportunity",
     "Website": "https://apps1.mo.gov/MWBCertifiedFirms/",
     "Title": "Firm Search - State of Missouri",
@@ -1675,7 +1675,7 @@
   },
   {
     "Provider": "MN_DOA",
-	"State": "MN",
+    "State": "MN",
     "Name": "Minnesota DOA",
     "Website": "https://mn.gov/admin-stat/osp/download/vmpvendors.csv",
     "Title": "Equity in Procurement (TG/ED/VO) Directory / Minnesota Office of State Procurement",
@@ -1684,7 +1684,7 @@
   },
   {
     "Provider": "MN_METC",
-	"State": "MN",
+    "State": "MN",
     "Name": "Metropolitan Council - MN",
     "Website": "https://mcub.metc.state.mn.us/",
     "Title": "MCUB Directory",
@@ -1699,7 +1699,7 @@
   },
   {
     "Provider": "MN_UCP",
-	"State": "MN",
+    "State": "MN",
     "Name": "Minnesota UCP - MNUCP",
     "Website": "https://mnucp.metc.state.mn.us",
     "Title": "DBE System Directory",
@@ -1714,7 +1714,7 @@
   },
   {
     "Provider": "MT_DOT",
-	"State": "MT",
+    "State": "MT",
     "Name": "Montana DOT",
     "Website": "https://app.mdt.mt.gov/ess-dbe/",
     "Title": "DBE/SBE Directory",
@@ -1735,7 +1735,7 @@
   },
   {
     "Provider": "NC_DOA",
-	"State": "NC",
+    "State": "NC",
     "Name": "North Carolina DOA",
     "Website": "https://www.ips.state.nc.us/vendor/searchvendor.aspx?t=h",
     "Title": "Search for Vendor Information",
@@ -1756,7 +1756,7 @@
   },
   {
     "Provider": "NC_DOT_DBE",
-	"State": "NC",
+    "State": "NC",
     "Name": "North Carolina DOT",
     "Website": "https://www.ebs.nc.gov/VendorDirectory/default.html",
     "Title": "Directory of Firms | Connect NCDOT",
@@ -1771,7 +1771,7 @@
   },
   {
     "Provider": "NC_DOT_SBE",
-	"State": "NC",
+    "State": "NC",
     "Name": "North Carolina DOT",
     "Website": "https://www.ebs.nc.gov/VendorDirectory/default.html",
     "Title": "Directory of Firms | Connect NCDOT",
@@ -1786,7 +1786,7 @@
   },
   {
     "Provider": "NJ_SAVI",
-	"State": "NJ",
+    "State": "NJ",
     "Name": "State of New Jersey Department of Treasury - NJSAVI",
     "Website": "https://www20.state.nj.us/TYTR_SAVI/vendorSearch.jsp",
     "Title": "NJSAVI - Vendor Search",
@@ -1818,55 +1818,55 @@
     "Website": "https://ce.suffolkcountyny.gov/scminorityaffairs/search/Search.aspx",
     "Title": "Minority and Women Owned Business Directory",
     "Steps": [
-	  {
+      {
         "XPath": "//html",
         "Name": "Wait to load Website",
         "Action": "Wait",
         "Data": "2"
       },
-	  {
+      {
         "XPath": "//h3",
         "Name": "",
         "Action": "Verify",
         "Data": "Minority and Women Owned Business Directory"
       },
-	  {
+      {
         "XPath": "",
         "Name": "",
         "Action": "Screenshot",
         "Data": ""
       },
-	  {
+      {
         "XPath": "//input[@id='ContentPlaceHolder1_btnSearch']",
         "Name": "Click Search button",
         "Action": "Click",
         "Data": "None"
       },
-	  {
+      {
         "XPath": "",
         "Name": "",
         "Action": "Screenshot",
         "Data": ""
       },
-	  {
+      {
         "XPath": "//input[@id='ContentPlaceHolder1_chkNIGP']",
         "Name": "Include commodity codes checkbox",
         "Action": "Click",
         "Data": "None"
       },
-	  {
+      {
         "XPath": "",
         "Name": "",
         "Action": "Screenshot",
         "Data": ""
       },
-	  {
+      {
         "XPath": "//input[@id='ContentPlaceHolder1_btnToExcel']",
         "Name": "to Excel button",
         "Action": "Click",
         "Data": "None"
       },
-	  {
+      {
         "XPath": "",
         "Name": "",
         "Action": "Screenshot",
@@ -1876,7 +1876,7 @@
   },
   {
     "Provider": "OH_DAYTON",
-	"State": "OH",
+    "State": "OH",
     "Name": "City of Dayton, OH - PEP List",
     "Website": "https://citybots.com/Home/ViewCurrentPEPRoster",
     "Title": "",
@@ -1885,7 +1885,7 @@
   },
   {
     "Provider": "OH_DOD",
-	"State": "OH",
+    "State": "OH",
     "Name": "Ohio DAS",
     "Website": "https://eodreporting.oit.ohio.gov/mbe-certification",
     "Title": "Ohio.gov MBE Certification",
@@ -1906,7 +1906,7 @@
   },
   {
     "Provider": "OK_TULSA",
-	"State": "OK",
+    "State": "OK",
     "Name": "City of Tulsa, OK",
     "Website": "https://www.cityoftulsa.org/developmentbusiness/small-business-enterprise-program/",
     "Title": "City of Tulsa",
@@ -1921,7 +1921,7 @@
   },
   {
     "Provider": "SC_DOT_DBE",
-	"State": "SC",
+    "State": "SC",
     "Name": "South Carolina DOT - SCDOT",
     "Website": "http://dbwappsp.scdot.org/dbesearch",
     "Title": "SCDOT :: DBE and SBE Certification Directories",
@@ -1936,7 +1936,7 @@
   },
   {
     "Provider": "SC_DOT_SBE",
-	"State": "SC",
+    "State": "SC",
     "Name": "South Carolina DOT - SCDOT",
     "Website": "http://dbwappsp.scdot.org/dbesearch",
     "Title": "SCDOT :: DBE and SBE Certification Directories",
@@ -1951,7 +1951,7 @@
   },
   {
     "Provider": "SC_SMBCC",
-	"State": "SC",
+    "State": "SC",
     "Name": "South Carolina SMBCC",
     "Website": "https://osmba.sc.gov/directory.html",
     "Title": "S.C. Division of Small and Minority Business Contracting and Certification",
@@ -1966,7 +1966,7 @@
   },
   {
     "Provider": "WA_SEATTLE",
-	"State": "WA",
+    "State": "WA",
     "Name": "City of Seattle, WA",
     "Website": "http://web6.seattle.gov/fas/registration/ResultsInteractive.aspx?Name=%5ba-z%5d&State=True",
     "Title": "Run Report",
@@ -1981,7 +1981,7 @@
   },
   {
     "Provider": "WI_DOA",
-	"State": "WI",
+    "State": "WI",
     "Name": "Wisconsin DOA",
     "Website": "https://wisdp.wi.gov/Search.aspx",
     "Title": "Business Search",

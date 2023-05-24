@@ -1,8 +1,8 @@
 [
   {
     "Provider": "AL_ADECA",
-	"State": "AL",
-	"Name": "Alabama Department of Economic and Community Affairs - ADECA",
+    "State": "AL",
+    "Name": "Alabama Department of Economic and Community Affairs - ADECA",
     "Website": "http://adeca.alabama.gov/Divisions/ced/cdp/Pages/ombe.aspx",
     "Title": "Office of Minority Business Enterprise – ADECA",
     "Steps": [
@@ -16,7 +16,7 @@
   },
   {
     "Provider": "AK_AUCP",
-	"State": "AK",
+    "State": "AK",
     "Name": "Alaska Unified Certification Program - AUCP",
     "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
     "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
@@ -43,7 +43,7 @@
   },
   {
     "Provider": "CA_DGS",
-	"State": "CA",
+    "State": "CA",
     "Name": "California eProcure",
     "Website": "https://caleprocure.ca.gov/pages/PublicSearch/supplier-search.aspx",
     "Title": "The State of California Certifications",
@@ -76,7 +76,7 @@
   },
   {
     "Provider": "CA_LACITY_DBE",
-	"State": "CA",
+    "State": "CA",
     "Name": "City of Los angels, CA",
     "Website": "https://bca.lacity.org/CertificationListings/DBETable.php",
     "Title": "DBE/MBE/WBE Directory",
@@ -91,7 +91,7 @@
   },
   {
     "Provider": "CA_LACITY_SLB",
-	"State": "CA",
+    "State": "CA",
     "Name": "City of Los angels, CA",
     "Website": "https://bca.lacity.org/CertificationListings/SLBDirectory.php",
     "Title": "SLB Directory",
@@ -106,7 +106,7 @@
   },
   {
     "Provider": "CA_PORTOAK",
-	"State": "CA",
+    "State": "CA",
     "Name": "Port of Oakland, CA",
     "Website": "https://srd.portofoakland.com/index.aspx",
     "Title": "Port's Social Responsibility database of certified businesses",
@@ -133,7 +133,7 @@
   },
   {
     "Provider": "AR_EDC",
-	"State": "AR",
+    "State": "AR",
     "Name": "Arkansas Economic Development Commission - AEDC",
     "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
     "Title": "Directory",
@@ -175,7 +175,7 @@
   },
   {
     "Provider": "KS_COMMERCE",
-	"State": "KS",
+    "State": "KS",
     "Name": "Kansas Department of Commerce",
     "Website": "https://kansascommerce.my.salesforce-sites.com/mwbds/",
     "Title": "Minority and Women Business Directory Search",
@@ -196,7 +196,7 @@
   },
   {
     "Provider": "NV_GOED",
-	"State": "NV",
+    "State": "NV",
     "Name": "Nevada Governor's Office of Economic Development",
     "Website": "https://goed.nv.gov/emerging-small-business-directory/",
     "Title": "Emerging Small Business Directory - Nevada Governor's Office of Economic Development",

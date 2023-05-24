@@ -1,8 +1,8 @@
 [
   {
     "Provider": "AK_AUCP",
-	"State": "AK",
-    "Name": "Alaska Unified Certification Program - AUCP",	
+    "State": "AK",
+    "Name": "Alaska Unified Certification Program - AUCP",
     "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
     "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
     "Steps": [
@@ -28,7 +28,7 @@
   },
   {
     "Provider": "AR_EDC",
-	"State": "AR",
+    "State": "AR",
     "Name": "Arkansas Economic Development Commission - AEDC",
     "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
     "Title": "Directory",
@@ -55,7 +55,7 @@
   },
   {
     "Provider": "CA_PORTOAK",
-	"State": "CA",
+    "State": "CA",
     "Name": "Port of Oakland, CA",
     "Website": "https://srd.portofoakland.com/index.aspx",
     "Title": "Port's Social Responsibility database of certified businesses",
@@ -82,7 +82,7 @@
   },
   {
     "Provider": "KS_COMMERCE",
-	"State": "KS",
+    "State": "KS",
     "Name": "Kansas Department of Commerce",
     "Website": "https://kansascommerce.my.salesforce-sites.com/mwbds/",
     "Title": "DBE Directory - Iowa DOT DBE Directory",
@@ -97,7 +97,7 @@
   },
   {
     "Provider": "LA_UCP",
-	"State": "LA",
+    "State": "LA",
     "Name": "Louisiana UCP - LA UCP",
     "Website": "http://www8.dotd.la.gov/UCP/UCPSearch.aspx",
     "Title": "UCP Search",
@@ -118,7 +118,7 @@
   },
   {
     "Provider": "NV_GOED",
-	"State": "NV",
+    "State": "NV",
     "Name": "Nevada Governor's Office of Economic Development",
     "Website": "https://goed.nv.gov/emerging-small-business-directory/",
     "Title": "Emerging Small Business Directory - Nevada Governor's Office of Economic Development",
@@ -133,7 +133,7 @@
   },
   {
     "Provider": "PA_DOT",
-	"State": "PA",
+    "State": "PA",
     "Name": "Pennsylvania DOT",
     "Website": "https://www.dotsbe.pa.gov/SBEWeb/sbe/viewHome.do",
     "Title": "Small Business Enterprise",
@@ -154,7 +154,7 @@
   },
   {
     "Provider": "TX_AUSTIN_DATA",
-	"State": "TX",
+    "State": "TX",
     "Name": "City of Austin, TX",
     "Website": "https://data.austintexas.gov/Budget-and-Finance/Current-Small-Business-Enterprise-SBE-Certfied-Ven/uxwx-55kj",
     "Title": "Current Small Business Enterprise, SBE, Certfied Vendors | Open Data | City of Austin Texas",
@@ -175,7 +175,7 @@
   },
   {
     "Provider": "WA_WEBS",
-	"State": "WA",
+    "State": "WA",
     "Name": "Washington Electronic Business Solution",
     "Website": "https://pr-webs-vendor.des.wa.gov/VendorSearch.aspx",
     "Title": "Washington Electronic Business Solution",
@@ -220,7 +220,7 @@
   },
   {
     "Provider": "KS_DOT",
-	"State": "KS",
+    "State": "KS",
     "Name": "Kansas DOT",
     "Website": "https://kdotapp.ksdot.gov/dbecontractorlist/",
     "Title": "Directory of Disdvantage Businesses",
@@ -253,7 +253,7 @@
   },
   {
     "Provider": "KY_GOV_MWBE",
-	"State": "KY",
+    "State": "KY",
     "Name": "State of Kentucky",
     "Website": "https://finance.ky.gov/office-of-the-secretary/office-of-equal-employment-opportunity-contract-compliance/minority-and-women-business-enterprise-certification-program/Pages/default.aspx",
     "Title": "Minority & Women Business Enterprise Certification Program - Finance and Administration Cabinet",
@@ -268,7 +268,7 @@
   },
   {
     "Provider": "MO_DOT_ACDBE",
-	"State": "MO",
+    "State": "MO",
     "Name": "Missouri DOT - MODOT",
     "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
     "Title": "MRCC Directory",
@@ -295,7 +295,7 @@
   },
   {
     "Provider": "MO_DOT_DBE",
-	"State": "MO",
+    "State": "MO",
     "Name": "Missouri DOT - MODOT",
     "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
     "Title": "MRCC Directory",
@@ -322,7 +322,7 @@
   },
   {
     "Provider": "MO_DOT_SBE",
-	"State": "MO",
+    "State": "MO",
     "Name": "Missouri DOT - MODOT",
     "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
     "Title": "MRCC Directory",
@@ -349,7 +349,7 @@
   },
   {
     "Provider": "MN_DOA",
-	"State": "MN",
+    "State": "MN",
     "Name": "Minnesota DOA",
     "Website": "https://mn.gov/admin-stat/osp/download/vmpvendors.csv",
     "Title": "Equity in Procurement (TG/ED/VO) Directory / Minnesota Office of State Procurement",
@@ -358,7 +358,7 @@
   },
   {
     "Provider": "MT_DOT",
-	"State": "MT",
+    "State": "MT",
     "Name": "Montana DOT",
     "Website": "https://app.mdt.mt.gov/ess-dbe/",
     "Title": "DBE/SBE Directory",
@@ -379,7 +379,7 @@
   },
   {
     "Provider": "NC_DOT_DBE",
-	"State": "NC",
+    "State": "NC",
     "Name": "North Carolina DOT",
     "Website": "https://www.ebs.nc.gov/VendorDirectory/default.html",
     "Title": "Directory of Firms | Connect NCDOT",
@@ -394,7 +394,7 @@
   },
   {
     "Provider": "NC_DOT_SBE",
-	"State": "NC",
+    "State": "NC",
     "Name": "North Carolina DOT",
     "Website": "https://www.ebs.nc.gov/VendorDirectory/default.html",
     "Title": "Directory of Firms | Connect NCDOT",
@@ -409,7 +409,7 @@
   },
   {
     "Provider": "OH_DOD",
-	"State": "OH",
+    "State": "OH",
     "Name": "Ohio DAS",
     "Website": "https://eodreporting.oit.ohio.gov/mbe-certification",
     "Title": "Ohio.gov MBE Certification",
@@ -430,7 +430,7 @@
   },
   {
     "Provider": "OK_TULSA",
-	"State": "OK",
+    "State": "OK",
     "Name": "City of Tulsa, OK",
     "Website": "https://www.cityoftulsa.org/developmentbusiness/small-business-enterprise-program/",
     "Title": "City of Tulsa",
