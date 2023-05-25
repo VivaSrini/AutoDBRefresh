@@ -104,7 +104,7 @@ records = []
 
 
 def processFile(filename):
-    log.info(f'Processing {provider}... loading file {filename}')
+    log.info(f'Loaded module {provider}...')
     wb = openpyxl.load_workbook(filename)
     ws = wb.active
 
