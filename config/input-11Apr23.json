@@ -5,6 +5,9 @@
     "Name": "Alabama Department of Economic and Community Affairs - ADECA",
     "Website": "http://adeca.alabama.gov/Divisions/ced/cdp/Pages/ombe.aspx",
     "Title": "Office of Minority Business Enterprise – ADECA",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[text()='OMBE certified businesses']",
@@ -20,6 +23,9 @@
     "Name": "Alaska Unified Certification Program - AUCP",
     "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
     "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//input[@id='btnSearch']",
@@ -47,6 +53,9 @@
     "Name": "California DGS",
     "Website": "https://caleprocure.ca.gov/pages/PublicSearch/supplier-search.aspx",
     "Title": "The State of California Certifications",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button[@name='ZZ_PUBSRCH1_WRK_BUTTON']",

@@ -3,6 +3,9 @@
     "Provider": "AL_ADECA",
     "Website": "http://adeca.alabama.gov/Divisions/ced/cdp/Pages/ombe.aspx",
     "Title": "Office of Minority Business Enterprise – ADECA",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[text()='OMBE certified businesses']",
@@ -16,6 +19,9 @@
     "Provider": "AK_AUCP",
     "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
     "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//input[@id='btnSearch']",
@@ -35,6 +41,9 @@
     "Provider": "AR_EDC",
     "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
     "Title": "Directory",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button[text()='Accept']",
@@ -60,6 +69,9 @@
     "Provider": "CA_CALTRANS",
     "Website": "https://ucp.dot.ca.gov/index2.jsp",
     "Title": "DBE Firms Query - Welcome",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[text()='Start DBE Firms Query']",
@@ -85,6 +97,9 @@
     "Provider": "CA_DGS",
     "Website": "https://caleprocure.ca.gov/pages/index.aspx",
     "Title": "California State Government Marketplace",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button[@id='get-started']",
@@ -116,6 +131,9 @@
     "Provider": "CA_LACITY_DBE",
     "Website": "https://bca.lacity.org/CertificationListings/DBETable.php",
     "Title": "DBE/MBE/WBE Directory",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button/span[text()='Excel']",
@@ -129,6 +147,9 @@
     "Provider": "CA_LACITY_SLB",
     "Website": "https://bca.lacity.org/CertificationListings/SLBDirectory.php",
     "Title": "SLB Directory",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button/span[text()='Excel']",
@@ -142,6 +163,9 @@
     "Provider": "CA_SFCTA_LGBTE",
     "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
     "Title": "Work with Us | SFCTA",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[contains(text(),'SFCTA Certified DBE/LBE/SBE/LGBTBE/DVBE')]",
@@ -155,6 +179,9 @@
     "Provider": "CA_SFCTA_SBE",
     "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
     "Title": "Work with Us | SFCTA",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[contains(text(),'I AGREE')]",
@@ -192,6 +219,9 @@
     "Provider": "CA_ACGOV",
     "Website": "https://www.acgov.org/sleb_query_app/slebmenu.jsp",
     "Title": "SLEB Supplier Search",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[contains(text(),'Advanced Search')]",
@@ -223,6 +253,9 @@
     "Provider": "CA_PORTOAK",
     "Website": "https://srd.portofoakland.com/index.aspx",
     "Title": "Port's Social Responsibility database of certified businesses",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//input[@name='sSearchBasic']",
@@ -248,6 +281,9 @@
     "Provider": "CA_OAKLAND",
     "Website": "https://apps.oaklandca.gov/contractcompliance/Contractors.aspx",
     "Title": "Certified Contractors",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[@title='Download List']",
@@ -261,6 +297,9 @@
     "Provider": "CO_DENVER_RTD",
     "Website": "https://www.rtd-denver.com/business-center/dbesbe#sbe-directory",
     "Title": "DBE/SBE Program | RTD - Denver",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[contains(text(),'RTD-SBE-Directory-01-31-2023.xls')]",
@@ -274,6 +313,9 @@
     "Provider": "CT_BIZNET_SD",
     "Website": "https://biznet.ct.gov/SDSearch/SDSearch.aspx",
     "Title": "Company Search",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//input[@id='btnSearch']",
@@ -293,6 +335,9 @@
     "Provider": "DC_DSLBD",
     "Website": "https://dslbd.secure.force.com/public/",
     "Title": "DC.gov DSLBD",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//input[@value='Export All']",
@@ -306,6 +351,9 @@
     "Provider": "FL_DOT",
     "Website": "https://fdotxwp02.dot.state.fl.us/EqualOpportunityOfficeBusinessDirectory/CustomSearch.aspx",
     "Title": "DBE Directory",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//input[@class='ui-dialog-titlebar-close']",

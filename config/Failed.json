@@ -5,6 +5,9 @@
     "Name": "City of Phoenix, AZ",
     "Website": "https://phoenix.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
     "Title": "City of Phoenix Certification and Contract System",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//div[@class='recaptcha-checkbox-checkmark']",
@@ -26,6 +29,9 @@
     "Name": "San Francisco County Transportation Authority ",
     "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
     "Title": "Work with Us | SFCTA",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[contains(text(),'I AGREE')]",
@@ -65,6 +71,9 @@
     "Name": "County of Alameda",
     "Website": "https://www.acgov.org/sleb_query_app/slebmenu.jsp",
     "Title": "SLEB Supplier Search",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[contains(text(),'Advanced Search')]",
@@ -98,6 +107,9 @@
     "Name": "City of Oakland, CA",
     "Website": "https://apps.oaklandca.gov/contractcompliance/Contractors.aspx",
     "Title": "Certified Contractors",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[@title='Download List']",
@@ -113,6 +125,9 @@
     "Name": "Florida DOT - FDOT",
     "Website": "https://fdotxwp02.dot.state.fl.us/EqualOpportunityOfficeBusinessDirectory/CustomSearch.aspx",
     "Title": "DBE Directory",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//input[@class='ui-dialog-titlebar-close']",
@@ -146,6 +161,9 @@
     "Name": "Duval County, FL",
     "Website": "https://pub1.duvalschools.org/oeo-dir/",
     "Title": "Directory - Office Of Economic Opportunity",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[@id='MainContent_LbtnViewReport' and text()='Report']",
@@ -177,6 +195,9 @@
     "Name": "Georgia DOT - GDOT",
     "Website": "https://gdotbiext.dot.ga.gov/ext-bi/saw.dll?Dashboard&PortalPath=/shared/External/_portal/UCP%20Directory&Page=UCP%20Directory&Action=Navigate&Syndicate=true&anon=1",
     "Title": "Directory_Of_Prequal-ANS - Oracle Analytics Publisher",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[@name='ReportLinkMenu' and text()='Export']",
@@ -210,6 +231,9 @@
     "Name": "Georgia DOT - GDOT",
     "Website": "https://gdotbiext.dot.ga.gov/ext-bi/saw.dll?Dashboard&PortalPath=/shared/External/_portal/UCP%20Directory&Page=UCP%20Directory&Action=Navigate&Syndicate=true&anon=1",
     "Title": "Oracle BI Interactive Dashboards - UCP Directory",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[@name='ReportLinkMenu' and text()='Export']",
@@ -237,6 +261,9 @@
     "Name": "Kentucky Transportation Cabinet",
     "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-DBE-Directory.aspx",
     "Title": "Certified DBE Directory | KYTC",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[contains(text(),'View DBE Directory')]",
@@ -258,6 +285,9 @@
     "Name": "Kentucky Transportation Cabinet",
     "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-SBE-Directory.aspx",
     "Title": "Certified DBE Directory | KYTC",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button[contains(@class,'buttons-excel')]",
@@ -273,6 +303,9 @@
     "Name": "Anne Arundel County, MD",
     "Website": "https://www.aacounty.org/services-and-programs/directory-of-minority--woman-owned-businesses",
     "Title": "Directory of Minority & Woman-Owned Businesses | Anne Arundel County, MD",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button[text()='Search']",
@@ -294,6 +327,9 @@
     "Name": "City of Baltimore, MD",
     "Website": "https://cityservices.baltimorecity.gov/mwboo/",
     "Title": "",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[text()='Certified MBE/WBE Directory']",
@@ -309,6 +345,9 @@
     "Name": "City of Boston, MA",
     "Website": "https://data.boston.gov/dataset/certified-business-directory",
     "Title": "Certified Business Directory - Datasets - Analyze Boston",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[@title='Certified Business Directory']",
@@ -330,6 +369,9 @@
     "Name": "North Carolina DOA",
     "Website": "https://www.ips.state.nc.us/vendor/searchvendor.aspx",
     "Title": "Search for Vendor Information",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//input[@value='Search']",
@@ -351,6 +393,9 @@
     "Name": "Utah UCP - UUCP",
     "Website": "https://drive.google.com/file/d/1r6n4o9F14jFEqtINICrFxrfiAs9948ho/view",
     "Title": "uucp-dbe-directory.pdf",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//div[@aria-label='Download']",
@@ -366,6 +411,9 @@
     "Name": "Ohio DOT - DBE",
     "Website": "http://odotextrpt.dot.state.oh.us/ViewReport.aspx?reportPath=%2fprd%2fpreconstruction%2fpublic%2fextawp_dbe_directoryreport",
     "Title": "Run Report",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//input[@id='ReportViewer1_ctl08_ctl00' and @value='View Report']",
@@ -393,6 +441,9 @@
     "Name": "Ohio DOT - SBE",
     "Website": "https://odotextrpt.dot.state.oh.us/ViewReport.aspx?reportPath=%2fprd%2fpreconstruction%2fpublic%2fsbe_vendor_list",
     "Title": "Run Report",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//a[@id='ReportViewer1_ctl09_ctl04_ctl00_ButtonLink' and @title='Export drop down menu']",
@@ -414,6 +465,9 @@
     "Name": "Nebraska DOT",
     "Website": "https://ndorpubreports.nebraska.gov/ReportServer/Pages/ReportViewer.aspx?/AASHTOWare_Project/PreConstruction/Alpha_Certified_DBEs&rv:DocMapMode=Displayed&rv:HeaderArea=BreadCrumbsOnly",
     "Title": "Civil Rights - Nebraska Department of Transportation",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//div[@id='ReportViewerControl_ctl05_ctl04_ctl00']",
@@ -435,6 +489,9 @@
     "Name": "City Hall Annex Bridgeport, CT",
     "Website": "https://www.scribd.com/document/60631937/MBE-WBE-Vendor-List-Construction-Only",
     "Title": "MBE/WBE Vendor List Construction Only | PDF | Bridgeport | Hartford",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button[contains(@class, 'download_btn') and @data-e2e='download-button']",
@@ -450,6 +507,9 @@
     "Name": "City Hall Annex Bridgeport, CT",
     "Website": "https://www.scribd.com/document/67601266/MBE-WBE-Non-Construction-Vendor-List",
     "Title": "MBE/WBE Non Construction Vendor List | PDF | Connecticut | Bridgeport",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button[contains(@class, 'download_btn') and @data-e2e='download-button']",
@@ -465,6 +525,9 @@
     "Name": "City of New York, NY",
     "Website": "https://sbsconnect.nyc.gov/certification-directory-search/",
     "Title": "UCP Web Application - Main Page",
+    "Download": "Yes",
+    "Convert": "Yes",
+    "FileName": "",
     "Steps": [
       {
         "XPath": "//button[contains(text(),'Submit Search') and @value='Submit']",
