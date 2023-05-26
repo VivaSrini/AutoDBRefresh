@@ -30,7 +30,7 @@ DWNL_TIMEOUT = config['Params']['DWNL_WAIT_TIMEOUT']
 SKIP_DOWNLOAD = config['Params']['SKIP_DOWNLOAD'].upper()[0]
 SKIP_CONVERT = config['Params']['SKIP_CONVERT'].upper()[0]
 MERGE_OUTPUT = config['Params']['MERGE_OUTPUT'].upper()[0]
-MERGED_CSV_FILENAME = config['Params']['MERGED_CSV_FILENAME'].upper()[0]
+MERGED_CSV_FILENAME = config['Params']['MERGED_CSV_FILENAME']
 
 BASE_PATH = os.path.realpath("./")
 CONFIG_PATH = os.path.join(BASE_PATH, CONFIG_FOLDER_NAME)

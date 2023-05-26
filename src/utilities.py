@@ -64,6 +64,7 @@ def get_csv_header():
 
 def empty_dict():
     dict1: dict = {key: value for key, value in []}
+    dict1['source'] = ''
     dict1['sequence'] = ''
     dict1['company'] = ''
     dict1['dba'] = ''
@@ -106,6 +107,9 @@ def empty_dict():
 
 def dict_to_csv(data_rec):
     csv_rec = ''
+
+    # Column #0 - Provider
+    csv_rec += '"' + data_rec['source'] + '",'
 
     # Column #1 - Sequence Number
     csv_rec += '"' + data_rec['sequence'] + '",'

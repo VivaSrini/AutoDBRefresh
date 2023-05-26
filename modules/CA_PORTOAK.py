@@ -118,6 +118,7 @@ def processFile(filename):
 
         for row_num, row in enumerate(reader):
             dict1 = empty_dict()
+            dict1['source'] = provider
             dict1['sequence'] = prepare_csv_data(row_num + 1)
             dict1['company'] = prepare_csv_data(row[0])
             dict1['addr1'] = prepare_csv_data(row[3])

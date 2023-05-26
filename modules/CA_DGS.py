@@ -131,6 +131,7 @@ def processFile(filename):
     for _idx, row in df1.iterrows():
         dict1 = empty_dict()
         idx += 1
+        dict1['source'] = provider
         dict1['sequence'] = prepare_csv_data(idx)
         dict1['company'] = prepare_csv_data(row['Legal Business Name'])
         dict1['dba'] = prepare_csv_data(row['Doing Business As 1'])

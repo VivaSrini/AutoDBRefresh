@@ -112,6 +112,7 @@ def processFile(filename):
                 continue
             csv_row_num += 1
             dict1 = empty_dict()
+            dict1['source'] = provider
             dict1['sequence'] = prepare_csv_data(csv_row_num)
             dict1['company'] = prepare_csv_data(row[6])
             dict1['dba'] = prepare_csv_data(row[7])

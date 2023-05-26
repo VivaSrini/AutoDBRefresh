@@ -113,6 +113,7 @@ def processFile(filename):
 
     while ws.cell(row_num, 1).value:
         dict1 = empty_dict()
+        dict1['source'] = provider
         dict1['sequence'] = prepare_csv_data(row_num - 2)
         dict1['company'] = prepare_csv_data(ws.cell(row_num, 2).value)
         dict1['addr1'] = prepare_csv_data(ws.cell(row_num, 4).value)
