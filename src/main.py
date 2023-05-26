@@ -36,10 +36,10 @@ shutil.copyfile(custom_logger.BASE_INPUT_JSON, custom_logger.RUN_INPUT_JSON)
 # Setup Excel Output
 wb = xlsxwriter.Workbook(custom_logger.XL_FILE)
 ws = wb.add_worksheet(custom_logger.XL_SHEET)
-header_format = wb.add_format({'bold': True, 'bg_color': '#9BC2E6'})
-success_format = wb.add_format({'bg_color': '#8FCE00'})
-failed_format = wb.add_format({'bg_color': '#F4B084'})
-skipped_format = wb.add_format({'bg_color': '#2986CC'})
+header_format = wb.add_format({'bold': True, 'bg_color': '#AAAAAA'})
+success_format = wb.add_format({'font_color': '#006100', 'bg_color': '#C6EFCE'})
+failed_format = wb.add_format({'font_color': '#9C0006', 'bg_color': '#FFC7CE'})
+skipped_format = wb.add_format({'font_color': '#9C6500', 'bg_color': '#FFEB9C'})
 ws.write('A1', "SNo", header_format)
 ws.write('B1', "Provider", header_format)
 ws.write('C1', "Download", header_format)
@@ -83,6 +83,7 @@ browser.execute_cdp_cmd('Page.setDownloadBehavior', params)
 browser.maximize_window()
 
 mods = {}
+wrote_header = False
 
 
 # Function: Take Screenshot
@@ -98,7 +99,7 @@ def upd_XL_stat(row, provider="", download="", convert="", fName=""):
     if row: ws.write(row, 0, row)
     if provider: ws.write(row, 1, provider)
     if download: ws.write(row, 2, download, bg_formats[download])
-    if convert: ws.write(row, 2, convert, bg_formats[download])
+    if convert: ws.write(row, 3, convert, bg_formats[convert])
     if fName: ws.write(row, 4, os.path.splitext(fName)[1][1:] if download == "Success" else '')
     if fName: ws.write(row, 5, fName)
 
@@ -122,6 +123,7 @@ def download_source(index, source):
             log.error(err_msg)
             # log.exception(e)
             take_scr_shot('ConnectionErr')
+            upd_XL_stat(row=index + 1, provider=source["Provider"], download="Failed", fName=err_msg)
             raise NextItem(err_msg)
 
         # Read steps to be performed
@@ -240,6 +242,7 @@ def download_source(index, source):
             elapsed = int((curr_time - start_time).total_seconds())
             if elapsed > int(custom_logger.DWNL_TIMEOUT):
                 err_msg = f'Timeout ({custom_logger.DWNL_TIMEOUT}s) waiting for file download... skipping...'
+                take_scr_shot('Download Timeout')
                 log.info(err_msg)
                 raise NextItem(err_msg)
 
@@ -247,13 +250,13 @@ def download_source(index, source):
             fdp = custom_logger.FINAL_DOWNLOAD_PATH
             files = os.listdir(tdp)
             if len(files) == 0:
-                log.info('Waiting for download to start...')
-                take_scr_shot('Wait2Strt')
-                time.sleep(2)
+                # log.info('Waiting for download to start...')
+                # take_scr_shot('Wait2Strt')
+                # time.sleep(2)
                 continue
             if [file for file in files if (".crdownload" in file or ".htm" in file)]:
-                log.info('Waiting for download to complete...')
-                take_scr_shot('Wait2End')
+                # log.info('Waiting for download to complete...')
+                # take_scr_shot('Wait2End')
                 time.sleep(2)
                 for hf in glob.glob(os.path.join(tdp, "*.htm")):
                     try:
@@ -278,6 +281,7 @@ def download_source(index, source):
         if switched_tab:
             browser.close()
             browser.switch_to.window(t0)
+        return file
 
     # Catch errors and process next item
     except NextItem as _e:
@@ -286,8 +290,9 @@ def download_source(index, source):
 
 
 def process_downloaded_file(itemnum, source):
+    global wrote_header
 
-    if not source['Convert'][0].upper() == 'N':
+    if source['Convert'][0].upper() == 'N':
         log.info(f'Skipping conversion as configured')
         upd_XL_stat(row=itemnum + 1, convert="Skipped")
         return
@@ -311,6 +316,9 @@ def process_downloaded_file(itemnum, source):
 
         if custom_logger.MERGE_OUTPUT == 'N':
             c.write(get_csv_header())
+        elif not wrote_header:
+            wrote_header = True
+            c.write(get_csv_header())
 
         log.info(f'Writing {len(data_records)} CSV records into {fname}...')
         for data_record in data_records:
@@ -331,7 +339,8 @@ try:
         log.info('*'*80)
         log.info(f'Item# {idx+1}/{num_items}. Source:{item["Provider"]}')
         log.info('Downloading file...')
-        if custom_logger.SKIP_DOWNLOAD == "N": download_source(index=idx, source=item)
+        if custom_logger.SKIP_DOWNLOAD == "N":
+            item['FileName'] = download_source(index=idx, source=item)
         log.info('Converting file...')
         if custom_logger.SKIP_CONVERT == "N": process_downloaded_file(itemnum=idx, source=item)
 
