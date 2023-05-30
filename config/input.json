@@ -5,8 +5,8 @@
     "Name": "Alaska Unified Certification Program - AUCP",    
     "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
     "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation  Public Facilities, State of Alaska.csv",
     "Steps": [
       {
@@ -35,8 +35,8 @@
     "Name": "Alabama Department of Economic and Community Affairs - ADECA",
     "Website": "http://adeca.alabama.gov/Divisions/ced/cdp/Pages/ombe.aspx",
     "Title": "Office of Minority Business Enterprise – ADECA",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "OMBE-certified-businesses.xlsx",
     "Steps": [
       {
@@ -53,7 +53,7 @@
     "Name": "Alabama UCP",
     "Website": "https://cpmsapps2.dot.state.al.us/alucp/home",
     "Title": "Alabama UCP",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "ucplist.xls",
     "Steps": [
@@ -77,8 +77,8 @@
     "Name": "Arkansas Economic Development Commission - AEDC",
     "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
     "Title": "Directory",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "women-minority-owned-business.csv",
     "Steps": [
       {
@@ -107,8 +107,8 @@
     "Name": "California eProcure",
     "Website": "https://caleprocure.ca.gov/pages/PublicSearch/supplier-search.aspx",
     "Title": "The State of California Certifications",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "ps.xls",
     "Steps": [
       {
@@ -143,7 +143,7 @@
     "Name": "California DOT",
     "Website": " https://ucp.dot.ca.gov/licenseForm.htm",
     "Title": "UCP Web Application - Main Page",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "UCPReport.xls",
     "Steps": [
@@ -167,8 +167,8 @@
     "Name": "City of Los angels, CA",
     "Website": "https://bca.lacity.org/CertificationListings/DBETable.php",
     "Title": "DBE/MBE/WBE Directory",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "DBEMBEWBE Directory.xlsx",
     "Steps": [
       {
@@ -185,8 +185,8 @@
     "Name": "City of Los angels, CA",
     "Website": "https://bca.lacity.org/CertificationListings/SLBDirectory.php",
     "Title": "SLB Directory",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "SLB Directory.xlsx",
     "Steps": [
       {
@@ -203,8 +203,8 @@
     "Name": "Port of Oakland, CA",
     "Website": "https://srd.portofoakland.com/index.aspx",
     "Title": "Port's Social Responsibility database of certified businesses",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "SRD-Output.csv",
     "Steps": [
       {
@@ -233,8 +233,8 @@
     "Name": "San Francisco County Transportation Authority",
     "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
     "Title": "Work with Us | SFCTA",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "SFCTA_Certified_DBE_LBE_12-30-21.xlsx",
     "Steps": [
       {
@@ -251,7 +251,7 @@
     "Name": "Colorado Regional Transportation District",
     "Website": "https://www.rtd-denver.com/business-center/dbesbe#sbe-directory",
     "Title": "DBE/SBE Program | RTD - Denver",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "RTD-SBE-Directory-04-30-2023.xls",
     "Steps": [
@@ -269,7 +269,7 @@
     "Name": "District of columbia - DSLBD",
     "Website": "https://dslbd.secure.force.com/public/",
     "Title": "DC.gov DSLBD",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "DC_CBE_Export_All.xls",
     "Steps": [
@@ -287,8 +287,8 @@
     "Name": "Delaware Open Data - Office of Supplier Diversity",
     "Website": "https://data.delaware.gov/api/views/s4ev-nzhm/rows.csv?accessType=DOWNLOAD&bom=true&format=true",
     "Title": "Certified Vendors - Office of Supplier Diversity",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "Certified_Vendors_-_Office_of_Supplier_Diversity.csv",
     "Steps": [
     ]
@@ -299,8 +299,8 @@
     "Name": "Delaware Open Data - Small Business",
     "Website": "https://data.delaware.gov/api/views/trst-y7rh/rows.csv?accessType=DOWNLOAD&bom=true&format=true",
     "Title": "Certified Vendors - Small Business Focus Program",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "Certified_Vendors_-_Small_Business_Focus_Program.csv",
     "Steps": [
     ]
@@ -311,7 +311,7 @@
     "Name": "Economic Development & Diversity Compliance (EDDC) / S/M/WBE Certified Suppliers Directory",
     "Website": "https://www.browardschools.com/Page/59879",
     "Title": "Certified Vendors - Small Business Focus Program",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "ESMWBE Report 05.12.23.xlsx",
     "Steps": [
@@ -329,7 +329,7 @@
     "Name": "City of Jacksonville Small and Emerging Businesses (JSEB)",
     "Website": " https://jaxseb.coj.net/",
     "Title": "JSEB Vendor Search",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "Vendors.xls",
     "Steps": [
@@ -347,7 +347,7 @@
     "Name": "Iowa DOT",
     "Website": "https://secure.iowadot.gov/DBE/Home/Index/",
     "Title": "DBE Directory - Iowa DOT DBE Directory",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "DirectoryListing.xls",
     "Steps": [
@@ -377,8 +377,8 @@
     "Name": "Illinois DOT - IDOT",
     "Website": "https://webapps1.dot.illinois.gov/UCP/ExternalSearch/",
     "Title": "UCP Search",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "",
     "Steps": [
       {
@@ -401,7 +401,7 @@
     "Name": "Indiana DOA",
     "Website": "https://www.in.gov/idoa/mwbe/minority-and-womens-business-enterprises/certified-business-search/",
     "Title": "IDOA: Division of Supplier Diversity: Certified Business Search",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "certification_list.xlsx",
     "Steps": [
@@ -419,7 +419,7 @@
     "Name": "Indiana DIT - INDOT",
     "Website": "https://entapps.indot.in.gov/dbelocator/",
     "Title": "",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "DBE Directory Search.xls",
     "Steps": [
@@ -443,7 +443,7 @@
     "Name": "City of Indianapolis, IN",
     "Website": "https://www.indy.gov/activity/find-omwbd-contractor",
     "Title": "indy.gov: Work with an OMWBD Certified Vendor",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "May 2023 XBE Directory.xlsx",
     "Steps": [
@@ -461,8 +461,8 @@
     "Name": "Kansas Department of Commerce",
     "Website": "https://kansascommerce.my.salesforce-sites.com/mwbds/",
     "Title": "Minority and Women Business Directory Search",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "BusinessExport.csv",
     "Steps": [
       {
@@ -485,7 +485,7 @@
     "Name": "Kansas DOT",
     "Website": "https://kdotapp.ksdot.gov/dbecontractorlist/",
     "Title": "Directory of Disdvantage Businesses",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "CrystalReportViewer1.csv",
     "Steps": [
@@ -521,7 +521,7 @@
     "Name": "State of Kentucky",
     "Website": "https://finance.ky.gov/office-of-the-secretary/office-of-equal-employment-opportunity-contract-compliance/minority-and-women-business-enterprise-certification-program/Pages/default.aspx",
     "Title": "Minority & Women Business Enterprise Certification Program - Finance and Administration Cabinet",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "MWBE Certified Listing.xls",
     "Steps": [
@@ -539,7 +539,7 @@
     "Name": "State of Kentucky",
     "Website": "https://finance.ky.gov/office-of-the-secretary/office-of-equal-employment-opportunity-contract-compliance/sdvosb/Pages/default.aspx",
     "Title": "Minority & Women Business Enterprise Certification Program - Finance and Administration Cabinet",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "SDVOSB_Certified Listing.xls",
     "Steps": [
@@ -557,7 +557,7 @@
     "Name": "Kentucky Transportation Cabinet",
     "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-DBE-Directory.aspx",
     "Title": "Certified DBE Directory | KYTC",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "Certified DBE Directory.xlsx",
     "Steps": [
@@ -587,7 +587,7 @@
     "Name": "Kentucky Transportation Cabinet",
     "Website": "https://transportation.ky.gov/Civil-Rights-and-Small-Business-Development/Pages/Certified-SBE-Directory.aspx",
     "Title": "Certified DBE Directory | KYTC",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "CertPrequal SBE DirectoryCertPrequal Consultant Directory.xlsx",
     "Steps": [
@@ -611,7 +611,7 @@
     "Name": "Housing Authority Of New Orleans",
     "Website": "http://www.hano.org/VendorRegistration/List",
     "Title": "Certified Vendors",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "certified_vendors.xls",
     "Steps": [
@@ -629,7 +629,7 @@
     "Name": "Louisiana Economic Development",
     "Website": "https://smallbiz.louisianaeconomicdevelopment.com/search/",
     "Title": "Search Certified Businesses - LOUISIANA SMALLBIZ SYSTEM",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "Searched Certified Business - 05-23-2023.xls",
     "Steps": [
@@ -647,8 +647,8 @@
     "Name": "Louisiana UCP - LA UCP",
     "Website": "http://www8.dotd.la.gov/UCP/UCPSearch.aspx",
     "Title": "UCP Search",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "DBEList.csv",
     "Steps": [
       {
@@ -672,7 +672,7 @@
     "Website": "https://data.boston.gov/dataset/certified-business-directory",
     "Title": "Certified Business Directory - Datasets - Analyze Boston",
     "Download": "Yes",
-    "Convert": "No",
+    "Convert": "Yes",
     "FileName": "tmpj8geo5py.csv",
     "Steps": [
       {
@@ -695,7 +695,7 @@
     "Name": "Massachusetts Supplier Diversity Office - MA SDO",
     "Website": "https://www.diversitycertification.mass.gov/BusinessDirectory/BusinessDirectoryDownload.aspx",
     "Title": "SDO",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "ACDBE Directory Listing Alpha.xls",
     "Steps": [
@@ -719,7 +719,7 @@
     "Name": "Massachusetts Supplier Diversity Office - MA SDO",
     "Website": "https://www.diversitycertification.mass.gov/BusinessDirectory/BusinessDirectoryDownload.aspx",
     "Title": "SDO",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "DBE Directory Listing Alpha.xls",
     "Steps": [
@@ -743,7 +743,7 @@
     "Name": "Massachusetts Supplier Diversity Office - MA SDO",
     "Website": "https://www.diversitycertification.mass.gov/BusinessDirectory/BusinessDirectoryDownload.aspx",
     "Title": "SDO",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "SDO Directory Listing Alpha.xls",
     "Steps": [
@@ -767,7 +767,7 @@
     "Name": "Kalamazoo County, MI",
     "Website": "https://www.kalcounty.com/purchasing/mbe_directory.htm",
     "Title": "MBE/WBE County Directory - Purchasing Department - Kalamazoo Michigan County Government Web Site",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "DBEList184749.csv",
     "Steps": [
@@ -785,7 +785,7 @@
     "Name": "Michigan UCP",
     "Website": "https://mdotjboss.state.mi.us/MUCPWeb/search.htm",
     "Title": "MDOT MUCP Public Application",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "CertifiedDBEFirmsList.xls",
     "Steps": [
@@ -809,7 +809,7 @@
     "Name": "Minnesota DOA",
     "Website": "https://mn.gov/admin-stat/osp/download/vmpvendors.csv",
     "Title": "Equity in Procurement (TG/ED/VO) Directory / Minnesota Office of State Procurement",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "vmpvendors.csv",
     "Steps": [
@@ -821,7 +821,7 @@
     "Name": "Missouri DOT - MODOT",
     "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
     "Title": "MRCC Directory",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "MRCC_DBE.csv",
     "Steps": [
@@ -851,7 +851,7 @@
     "Name": "Missouri DOT - MODOT",
     "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
     "Title": "MRCC Directory",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "MRCC_DBE190903.csv",
     "Steps": [
@@ -881,7 +881,7 @@
     "Name": "Missouri DOT - MODOT",
     "Website": "https://www6.modot.mo.gov/MRCC/Home/PublicSearch",
     "Title": "MRCC Directory",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "MRCC_DBE190923.csv",
     "Steps": [
@@ -911,7 +911,7 @@
     "Name": "Missouri Office of Equal Opportunity",
     "Website": "https://apps1.mo.gov/MWBCertifiedFirms/",
     "Title": "Firm Search - State of Missouri",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "FirmList.xlsx",
     "Steps": [
@@ -935,7 +935,7 @@
     "Name": "Mississippi Development Authority",
     "Website": "https://minority.mississippi.org/DirectorySearch.aspx",
     "Title": "Mississippi Development Authority | Mighty Mississippi",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "Directory_Excel20230523.xls",
     "Steps": [
@@ -959,7 +959,7 @@
     "Name": "Montana DOT",
     "Website": "https://app.mdt.mt.gov/ess-dbe/",
     "Title": "DBE/SBE Directory",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "dbe_sbe_list.xls",
     "Steps": [
@@ -983,7 +983,7 @@
     "Name": "North Carolina DOA",
     "Website": "https://www.ips.state.nc.us/vendor/searchvendor.aspx?t=h",
     "Title": "Search for Vendor Information",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "HubExcelSpreadsheet.xls",
     "Steps": [
@@ -1007,7 +1007,7 @@
     "Name": "North Carolina DOT",
     "Website": "https://www.ebs.nc.gov/VendorDirectory/default.html",
     "Title": "Directory of Firms | Connect NCDOT",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "VendorDirectoryDBE.csv",
     "Steps": [
@@ -1025,7 +1025,7 @@
     "Name": "North Carolina DOT",
     "Website": "https://www.ebs.nc.gov/VendorDirectory/default.html",
     "Title": "Directory of Firms | Connect NCDOT",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "VendorDirectorySBE.csv",
     "Steps": [
@@ -1043,7 +1043,7 @@
     "Name": "City of Omaha, NE",
     "Website": "https://humanrights.cityofomaha.org/excel-report",
     "Title": "Excel Report - Omaha Human Rights and Relations",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "esb_test.xlsx",
     "Steps": [
@@ -1061,7 +1061,7 @@
     "Name": "State of New Jersey Department of Treasury - NJSAVI",
     "Website": "https://www20.state.nj.us/TYTR_SAVI/vendorSearch.jsp",
     "Title": "NJSAVI - Vendor Search",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "SearchResults.xls",
     "Steps": [
@@ -1091,8 +1091,8 @@
     "Name": "Nevada Governor's Office of Economic Development",
     "Website": "https://goed.nv.gov/emerging-small-business-directory/",
     "Title": "Emerging Small Business Directory - Nevada Governor's Office of Economic Development",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "esb-download-05-23-2023-13-0505.csv",
     "Steps": [
       {
@@ -1109,7 +1109,7 @@
     "Name": "City of Albany, NY",
     "Website": "https://www.albanyny.gov/332/Minority-Women-Owned-Business-Enterprise",
     "Title": "Minority / Women-Owned Business Enterprises (MWBE) | Albany, NY",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "extraction.xls",
     "Steps": [
@@ -1127,7 +1127,7 @@
     "Name": "City of Rochester, NY",
     "Website": "https://www.cityofrochester.gov/mwbe/",
     "Title": "City of Rochester | Minority and Women-owned Business Enterprises (MWBE)",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "MWBE Published Directory 5.1.23.1.xlsx",
     "Steps": [
@@ -1145,7 +1145,7 @@
     "Name": "New York City School Construction Authority ",
     "Website": "https://dobusiness.nycsca.org/Supplier/SearchCertifiedSupplier.aspx?type=base&linkType=Contract",
     "Title": "NYCSCA - Supplier Portal",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "Qualified-CertifiedFirms_5_23_2023 9_19_47 AM.xls",
     "Steps": [
@@ -1169,7 +1169,7 @@
     "Name": "City of Dayton, OH - PEP List",
     "Website": "https://citybots.com/Home/ViewCurrentPEPRoster",
     "Title": "",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "Current PEP Certification List.xlsx",
     "Steps": [
@@ -1181,7 +1181,7 @@
     "Name": "City of Tulsa, OK",
     "Website": "https://www.cityoftulsa.org/developmentbusiness/small-business-enterprise-program/",
     "Title": "City of Tulsa",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "sbe-services-3-28-23-updated.xlsx",
     "Steps": [
@@ -1199,7 +1199,7 @@
     "Name": "Pennsylvania DGS",
     "Website": "https://www.dgs.internet.state.pa.us/suppliersearch",
     "Title": "DGS - Supplier Search",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "WeeklyDBEVendorList.xls",
     "Steps": [
@@ -1217,8 +1217,8 @@
     "Name": "Pennsylvania DOT",
     "Website": "https://www.dotsbe.pa.gov/SBEWeb/sbe/viewHome.do",
     "Title": "Small Business Enterprise",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "Data.csv",
     "Steps": [
       {
@@ -1241,7 +1241,7 @@
     "Name": "Rhode Island DOA",
     "Website": "https://datadoa.ri.gov/dedi/mbeco/dl-mbewbe-entiredirectory.php",
     "Title": "MBE/WBE Directory Search | Rhode Island Office of Division of Equity Diversity and Inclusion",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "mbewbe-directory.xls",
     "Steps": [
@@ -1253,7 +1253,7 @@
     "Name": "City of Charleston, SC",
     "Website": "https://www.charleston-sc.gov/127/Minority-Women-Owned-Business-Enterprise",
     "Title": "Minority & Women-Owned Business Enterprise Office | Charleston, SC - Official Website",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "MAY 2023 MWBE REGISTRY_202305101334240236.xlsx",
     "Steps": [
@@ -1271,7 +1271,7 @@
     "Name": "City of Columbia, SC",
     "Website": "https://obo.columbiasc.gov/contractor-supplier-diversity/smwbe/",
     "Title": "Columbia Disadvantaged Business Enterprise Program (CDBE) - City of Columbia OBO",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "CDBE-Directory-05.19.2023.xlsx",
     "Steps": [
@@ -1289,7 +1289,7 @@
     "Name": "City of Columbia, SC",
     "Website": "https://obo.columbiasc.gov/contractor-supplier-diversity/smwbe/",
     "Title": "Columbia Disadvantaged Business Enterprise Program (CDBE) - City of Columbia OBO",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "DBE-Directory-05.19.2023.xlsx",
     "Steps": [
@@ -1307,7 +1307,7 @@
     "Name": "South Carolina DOT - SCDOT",
     "Website": "http://dbwappsp.scdot.org/dbesearch",
     "Title": "SCDOT :: DBE and SBE Certification Directories",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "UCP_DBE_Directory.xlsx",
     "Steps": [
@@ -1325,7 +1325,7 @@
     "Name": "South Carolina DOT - SCDOT",
     "Website": "http://dbwappsp.scdot.org/dbesearch",
     "Title": "SCDOT :: DBE and SBE Certification Directories",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "SBE_Directory.xlsx",
     "Steps": [
@@ -1343,7 +1343,7 @@
     "Name": "South Dakota DOT - SDDOT",
     "Website": "https://dot.sd.gov/doing-business/contractors/dbe",
     "Title": "DBE - South Dakota Department of Transportation",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "DBEDirectory.xlsx",
     "Steps": [
@@ -1367,7 +1367,7 @@
     "Name": "City of Knoxville, TN",
     "Website": "https://www.knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11078433",
     "Title": "Diversity Business Directory - City of Knoxville",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "Diversity Business Directory.xlsx",
     "Steps": [
@@ -1385,8 +1385,8 @@
     "Name": "City of Austin, TX",
     "Website": "https://data.austintexas.gov/Budget-and-Finance/Current-Small-Business-Enterprise-SBE-Certfied-Ven/uxwx-55kj",
     "Title": "Current Small Business Enterprise, SBE, Certfied Vendors | Open Data | City of Austin Texas",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "Current_Small_Business_Enterprise__SBE__Certfied_Vendors.csv",
     "Steps": [
       {
@@ -1409,7 +1409,7 @@
     "Name": "City of Austin, TX",
     "Website": "https://financeonline.austintexas.gov/afo/account_services/search/vendors/certvendor.cfm",
     "Title": "Austin Finance Online",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "CertVendors.xls",
     "Steps": [
@@ -1433,7 +1433,7 @@
     "Name": "State of Vermont - Department of Buildings & General Services (BGS)",
     "Website": "https://bgs.vermont.gov/facilities/forms/minority-women",
     "Title": "Minority and Women Owned Business Enterprises | Buildings and General Services",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "MWBE DIRECTORY 5.03.2023.xlsx",
     "Steps": [
@@ -1451,7 +1451,7 @@
     "Name": "City of Seattle, WA",
     "Website": "http://web6.seattle.gov/fas/registration/ResultsInteractive.aspx?Name=%5ba-z%5d&State=True",
     "Title": "Run Report",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "RegistrationSearch.xls",
     "Steps": [
@@ -1469,8 +1469,8 @@
     "Name": "Washington Electronic Business Solution",
     "Website": "https://pr-webs-vendor.des.wa.gov/VendorSearch.aspx",
     "Title": "Washington Electronic Business Solution",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "VendorList5_23_2023 6_29_35 AM.csv",
     "Steps": [
       {
@@ -1499,7 +1499,7 @@
     "Name": "City of Madison, WI",
     "Website": "https://www.cityofmadison.com/civil-rights/contract-compliance/targeted-business-enterprise-programs/directories",
     "Title": "Directories | Civil Rights, City of Madison, Wisconsin",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "MBEDirectory.xlsx",
     "Steps": [
@@ -1517,7 +1517,7 @@
     "Name": "City of Madison, WI",
     "Website": "https://www.cityofmadison.com/civil-rights/contract-compliance/targeted-business-enterprise-programs/directories",
     "Title": "Directories | Civil Rights, City of Madison, Wisconsin",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "SBEDirectory.xlsx",
     "Steps": [
@@ -1535,7 +1535,7 @@
     "Name": "City of Madison, WI",
     "Website": "https://www.cityofmadison.com/civil-rights/contract-compliance/targeted-business-enterprise-programs/directories",
     "Title": "Directories | Civil Rights, City of Madison, Wisconsin",
-    "Download": "Yes",
+    "Download": "No",
     "Convert": "No",
     "FileName": "WBEDirectory.xlsx",
     "Steps": [
