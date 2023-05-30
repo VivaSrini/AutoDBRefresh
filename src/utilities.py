@@ -23,6 +23,7 @@ def prepare_csv_data(data, prefix=None, pattern=None, ssq=None):
 
 def get_csv_header():
     return \
+        f'"Source",' \
         f'"Sequence",' \
         f'"Company_Name",' \
         f'"DBA",' \
@@ -243,20 +244,38 @@ def csv_remove_columns(filename, col_array):
 
 
 def get_primary(data_list, separator=',', pattern=None):
-    item = str(data_list or '').split(separator)[0]
+    list1 = list([item for item in str(data_list or '').split(separator) if item])
+    primary = list1[0] if list1 else ''
+
     if pattern:
-        item = re.search(pattern, item)
-        return item.group(0) if item else ''
-    return item
+        primary = re.search(pattern, primary)
+        return primary.group(0) if primary else ''
+    return primary
 
 
 def get_other(data_list, separator=',', pattern=None):
     return_array = []
-    other_array = str(data_list or '').split(separator)[1:]
+    list1 = list([item for item in str(data_list or '').split(separator) if item])
+    other_array = list1[1:] if list1 else ''
+
     if pattern:
         for item in other_array:
             item = re.search(pattern, item)
             if item:
                 return_array.append(item.group(0))
-        return separator.join(return_array)
-    return other_array
+        return ','.join(return_array)
+    return ','.join(other_array)
+
+
+# Just Q&D, no controls yet...
+def format_phone(country_code='', area_code='', number='', ext='', fmt='2'):
+    ret_str = ''
+    match fmt:
+        case '1':
+            ret_str = f'+{country_code} ({area_code}) {number[:3]}-{number[-4:]} x{ext}' if ext \
+                else f'+{country_code} ({area_code}) {number[:3]}-{number[-4:]}'
+        case '2':
+            ret_str = f'({area_code}) {number[:3]}-{number[-4:]} x{ext}' if ext \
+                else f'({area_code}) {number[:3]}-{number[-4:]}'
+
+    return ret_str
