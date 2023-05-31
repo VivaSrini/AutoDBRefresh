@@ -96,7 +96,7 @@
 import csv
 import logging
 
-from src import custom_logger, prepare_csv_data, dedup_csv, csv_remove_columns, empty_dict
+from src import custom_logger, prepare_csv_data, dedup_csv, empty_dict
 from src import get_primary, get_other
 
 log = custom_logger.LogGen.logGen()
@@ -108,9 +108,8 @@ records = []
 
 def processFile(filename):
     log.info(f'Processing {provider}... loading file {filename}')
-    csv_remove_columns(filename,
-                       ['PContact First Name', 'PContact Last Name', 'PContact Email Address', 'PContact Phone'])
-    dedup_csv(filename)
+    columns_to_be_removed = ['PContact First Name', 'PContact Last Name', 'PContact Email Address', 'PContact Phone']
+    dedup_csv(filename, columns_to_be_removed)
 
     with open(filename, encoding="utf8") as f:
         reader = csv.reader(f)

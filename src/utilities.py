@@ -226,20 +226,11 @@ def dict_to_csv(data_rec):
     return csv_rec
 
 
-def dedup_csv(filename):
-    with open(filename, 'r') as in_file:
-        lines = in_file.readlines()
-
-    lines = list(dict.fromkeys(lines))
-
-    with open(filename, 'w') as out_file:
-        out_file.writelines(lines)
-
-
-def csv_remove_columns(filename, col_array):
+def dedup_csv(filename, col_array):
     df = pd.read_csv(filename)
     for col in col_array:
         df.pop(col)
+    df.drop_duplicates(inplace=True)
     df.to_csv(filename, index=False)
 
 
