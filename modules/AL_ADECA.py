@@ -92,8 +92,10 @@
 # ╚════════════════════════════╩═══════════════════════╩════════════╝
 #
 
-import openpyxl
 import logging
+
+import openpyxl
+
 from src import custom_logger, empty_dict, prepare_csv_data
 
 log = custom_logger.LogGen.logGen()

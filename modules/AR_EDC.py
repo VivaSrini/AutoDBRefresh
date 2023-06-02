@@ -88,6 +88,7 @@
 
 import csv
 import logging
+
 from src import custom_logger, empty_dict, prepare_csv_data, get_primary, get_other
 
 log = custom_logger.LogGen.logGen()
@@ -98,7 +99,7 @@ records = []
 
 
 def processFile(filename):
-    log.info(f'Processing {provider}... loading file {filename}')
+    log.info(f'Loaded module {provider}...')
 
     with open(filename, encoding="utf8") as f:
         reader = csv.reader(f)

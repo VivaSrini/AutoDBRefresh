@@ -107,7 +107,7 @@ records = []
 
 
 def processFile(filename):
-    log.info(f'Processing {provider}... loading file {filename}')
+    log.info(f'Loaded module {provider}...')
     columns_to_be_removed = ['PContact First Name', 'PContact Last Name', 'PContact Email Address', 'PContact Phone']
     dedup_csv(filename, columns_to_be_removed)
 

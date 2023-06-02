@@ -341,7 +341,7 @@ try:
         log.info('Downloading file...')
         if custom_logger.SKIP_DOWNLOAD == "N":
             item['FileName'] = download_source(index=idx, source=item)
-        log.info('Converting file...')
+        log.info(f'Converting file... {item["FileName"]}')
         if custom_logger.SKIP_CONVERT == "N": process_downloaded_file(itemnum=idx, source=item)
 
 # Exit Ctrl+C Gracefully

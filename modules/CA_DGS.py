@@ -93,9 +93,11 @@
 # ╚════════════════════════════╩═════════════════════╩════════════╝
 #
 
-import re
 import logging
+import re
+
 import pandas as pd
+
 from src import custom_logger, prepare_csv_data, empty_dict
 
 log = custom_logger.LogGen.logGen()
@@ -115,7 +117,7 @@ def prepare_array_str(array_str):
 
 
 def processFile(filename):
-    log.info(f'Processing {provider}... loading file {filename}')
+    log.info(f'Loaded module {provider}...')
 
     with open(filename, encoding="utf8") as f:
         html_str = f.read()

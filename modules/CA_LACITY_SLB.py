@@ -94,8 +94,10 @@
 # ║ Additional Details 10      ║                   ║            ║
 # ╚════════════════════════════╩═══════════════════╩════════════╝
 
-import openpyxl
 import logging
+
+import openpyxl
+
 from src import custom_logger, empty_dict, prepare_csv_data
 
 log = custom_logger.LogGen.logGen()
@@ -106,7 +108,7 @@ records = []
 
 
 def processFile(filename):
-    log.info(f'Processing {provider}... loading file {filename}')
+    log.info(f'Loaded module {provider}...')
     wb = openpyxl.load_workbook(filename)
     ws = wb.active
     row_num = 3
