@@ -270,3 +270,11 @@ def format_phone(country_code='', area_code='', number='', ext='', fmt='2'):
                 else f'({area_code}) {number[:3]}-{number[-4:]}'
 
     return ret_str
+
+
+def trim_file_header_rows(file_name, num_lines):
+    with open(file_name, encoding='utf-8') as f:
+        lines = f.readlines()
+
+    with open(file_name, encoding='utf-8', mode='w') as f:
+        f.writelines(lines[num_lines:])
