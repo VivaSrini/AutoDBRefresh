@@ -792,7 +792,7 @@
     "Website": "https://mn.gov/admin-stat/osp/download/vmpvendors.csv",
     "Title": "Equity in Procurement (TG/ED/VO) Directory / Minnesota Office of State Procurement",
     "Download": "Yes",
-    "Convert": "No",
+    "Convert": "Yes",
     "FileName": "vmpvendors.csv",
     "Steps": [
     ]
