@@ -762,24 +762,6 @@
     ]
   },
   {
-    "Provider": "MI_KALAMAZOO",
-	"State": "MI",
-    "Name": "Kalamazoo County, MI",
-    "Website": "https://www.kalcounty.com/purchasing/mbe_directory.htm",
-    "Title": "MBE/WBE County Directory - Purchasing Department - Kalamazoo Michigan County Government Web Site",
-    "Download": "Yes",
-    "Convert": "No",
-    "FileName": "DBEList184749.csv",
-    "Steps": [
-      {
-        "XPath": "//a[contains(text(),'View the MBE/WBE Directory')]",
-        "Name": "View the MBE/WBE Directory button",
-        "Action": "Click",
-        "Data": "None"
-      }
-    ]
-  },
-  {
     "Provider": "MI_UCP",
 	"State": "MI",
     "Name": "Michigan UCP",

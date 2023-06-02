@@ -671,8 +671,8 @@
     "Name": "City of Boston, MA",
     "Website": "https://data.boston.gov/dataset/certified-business-directory",
     "Title": "Certified Business Directory - Datasets - Analyze Boston",
-    "Download": "Yes",
-    "Convert": "Yes",
+    "Download": "No",
+    "Convert": "No",
     "FileName": "tmpj8geo5py.csv",
     "Steps": [
       {
@@ -762,24 +762,6 @@
     ]
   },
   {
-    "Provider": "MI_KALAMAZOO",
-	"State": "MI",
-    "Name": "Kalamazoo County, MI",
-    "Website": "https://www.kalcounty.com/purchasing/mbe_directory.htm",
-    "Title": "MBE/WBE County Directory - Purchasing Department - Kalamazoo Michigan County Government Web Site",
-    "Download": "No",
-    "Convert": "No",
-    "FileName": "DBEList184749.csv",
-    "Steps": [
-      {
-        "XPath": "//a[contains(text(),'View the MBE/WBE Directory')]",
-        "Name": "View the MBE/WBE Directory button",
-        "Action": "Click",
-        "Data": "None"
-      }
-    ]
-  },
-  {
     "Provider": "MI_UCP",
 	"State": "MI",
     "Name": "Michigan UCP",
@@ -809,7 +791,7 @@
     "Name": "Minnesota DOA",
     "Website": "https://mn.gov/admin-stat/osp/download/vmpvendors.csv",
     "Title": "Equity in Procurement (TG/ED/VO) Directory / Minnesota Office of State Procurement",
-    "Download": "No",
+    "Download": "Yes",
     "Convert": "No",
     "FileName": "vmpvendors.csv",
     "Steps": [
