@@ -252,7 +252,7 @@ def download_source(index, source):
             if len(files) == 0:
                 # log.info('Waiting for download to start...')
                 # take_scr_shot('Wait2Strt')
-                # time.sleep(2)
+                time.sleep(2)
                 continue
             if [file for file in files if (".crdownload" in file or ".htm" in file)]:
                 # log.info('Waiting for download to complete...')

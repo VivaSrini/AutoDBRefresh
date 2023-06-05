@@ -5,8 +5,8 @@
     "Name": "Alaska Unified Certification Program - AUCP",    
     "Website": "https://dot.alaska.gov/cvlrts/directory.shtml",
     "Title": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation & Public Facilities, State of Alaska",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "Disadvantaged Business Enterprise (DBE) Directory, Civil Rights Office, Transportation  Public Facilities, State of Alaska.csv",
     "Steps": [
       {
@@ -17,9 +17,15 @@
       },
       {
         "XPath": "//html",
-        "Name": "Wait for 2 seconds",
+        "Name": "Wait for 4 seconds",
         "Action": "Wait",
-        "Data": "2"
+        "Data": "4"
+      },
+      {
+        "XPath": "//table[@id='resultsDisplay']/tbody/tr[@class='even']",
+        "Name": "Wait for Results Table",
+        "Action": "Click",
+        "Data": "None"
       },
       {
         "XPath": "//button/span[text()='CSV']",
@@ -35,8 +41,8 @@
     "Name": "Alabama Department of Economic and Community Affairs - ADECA",
     "Website": "http://adeca.alabama.gov/Divisions/ced/cdp/Pages/ombe.aspx",
     "Title": "Office of Minority Business Enterprise – ADECA",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "OMBE-certified-businesses.xlsx",
     "Steps": [
       {
@@ -77,8 +83,8 @@
     "Name": "Arkansas Economic Development Commission - AEDC",
     "Website": "https://www.arkansasedc.com/community-resources/Minority-and-Women-Owned-Business-Enterprise-Resources/directory/",
     "Title": "Directory",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "women-minority-owned-business.csv",
     "Steps": [
       {
@@ -107,8 +113,8 @@
     "Name": "California eProcure",
     "Website": "https://caleprocure.ca.gov/pages/PublicSearch/supplier-search.aspx",
     "Title": "The State of California Certifications",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "ps.xls",
     "Steps": [
       {
@@ -143,8 +149,8 @@
     "Name": "California DOT",
     "Website": " https://ucp.dot.ca.gov/licenseForm.htm",
     "Title": "UCP Web Application - Main Page",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "UCPReport.xls",
     "Steps": [
       {
@@ -167,8 +173,8 @@
     "Name": "City of Los angels, CA",
     "Website": "https://bca.lacity.org/CertificationListings/DBETable.php",
     "Title": "DBE/MBE/WBE Directory",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "DBEMBEWBE Directory.xlsx",
     "Steps": [
       {
@@ -185,8 +191,8 @@
     "Name": "City of Los angels, CA",
     "Website": "https://bca.lacity.org/CertificationListings/SLBDirectory.php",
     "Title": "SLB Directory",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "SLB Directory.xlsx",
     "Steps": [
       {
@@ -203,8 +209,8 @@
     "Name": "Port of Oakland, CA",
     "Website": "https://srd.portofoakland.com/index.aspx",
     "Title": "Port's Social Responsibility database of certified businesses",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "SRD-Output.csv",
     "Steps": [
       {
@@ -233,8 +239,8 @@
     "Name": "San Francisco County Transportation Authority",
     "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
     "Title": "Work with Us | SFCTA",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "SFCTA_Certified_DBE_LBE_12-30-21.xlsx",
     "Steps": [
       {
@@ -287,8 +293,8 @@
     "Name": "Delaware Open Data - Office of Supplier Diversity",
     "Website": "https://data.delaware.gov/api/views/s4ev-nzhm/rows.csv?accessType=DOWNLOAD&bom=true&format=true",
     "Title": "Certified Vendors - Office of Supplier Diversity",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "Certified_Vendors_-_Office_of_Supplier_Diversity.csv",
     "Steps": [
     ]
@@ -299,8 +305,8 @@
     "Name": "Delaware Open Data - Small Business",
     "Website": "https://data.delaware.gov/api/views/trst-y7rh/rows.csv?accessType=DOWNLOAD&bom=true&format=true",
     "Title": "Certified Vendors - Small Business Focus Program",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "Certified_Vendors_-_Small_Business_Focus_Program.csv",
     "Steps": [
     ]
@@ -377,8 +383,8 @@
     "Name": "Illinois DOT - IDOT",
     "Website": "https://webapps1.dot.illinois.gov/UCP/ExternalSearch/",
     "Title": "UCP Search",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "",
     "Steps": [
       {
@@ -461,8 +467,8 @@
     "Name": "Kansas Department of Commerce",
     "Website": "https://kansascommerce.my.salesforce-sites.com/mwbds/",
     "Title": "Minority and Women Business Directory Search",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "BusinessExport.csv",
     "Steps": [
       {
@@ -647,8 +653,8 @@
     "Name": "Louisiana UCP - LA UCP",
     "Website": "http://www8.dotd.la.gov/UCP/UCPSearch.aspx",
     "Title": "UCP Search",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "DBEList.csv",
     "Steps": [
       {
@@ -671,8 +677,8 @@
     "Name": "City of Boston, MA",
     "Website": "https://data.boston.gov/dataset/certified-business-directory",
     "Title": "Certified Business Directory - Datasets - Analyze Boston",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "tmpj8geo5py.csv",
     "Steps": [
       {
@@ -1073,8 +1079,8 @@
     "Name": "Nevada Governor's Office of Economic Development",
     "Website": "https://goed.nv.gov/emerging-small-business-directory/",
     "Title": "Emerging Small Business Directory - Nevada Governor's Office of Economic Development",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "esb-download-05-23-2023-13-0505.csv",
     "Steps": [
       {
@@ -1199,8 +1205,8 @@
     "Name": "Pennsylvania DOT",
     "Website": "https://www.dotsbe.pa.gov/SBEWeb/sbe/viewHome.do",
     "Title": "Small Business Enterprise",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "Data.csv",
     "Steps": [
       {
@@ -1367,8 +1373,8 @@
     "Name": "City of Austin, TX",
     "Website": "https://data.austintexas.gov/Budget-and-Finance/Current-Small-Business-Enterprise-SBE-Certfied-Ven/uxwx-55kj",
     "Title": "Current Small Business Enterprise, SBE, Certfied Vendors | Open Data | City of Austin Texas",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "Current_Small_Business_Enterprise__SBE__Certfied_Vendors.csv",
     "Steps": [
       {
@@ -1451,8 +1457,8 @@
     "Name": "Washington Electronic Business Solution",
     "Website": "https://pr-webs-vendor.des.wa.gov/VendorSearch.aspx",
     "Title": "Washington Electronic Business Solution",
-    "Download": "No",
-    "Convert": "No",
+    "Download": "Yes",
+    "Convert": "Yes",
     "FileName": "VendorList5_23_2023 6_29_35 AM.csv",
     "Steps": [
       {
@@ -1464,6 +1470,12 @@
       {
         "XPath": "//input[@id='btnSearch']",
         "Name": "Search button",
+        "Action": "Click",
+        "Data": "None"
+      },
+      {
+        "XPath": "//table/tbody/tr/td[@class='formheader']",
+        "Name": "Wait for Search Results Table",
         "Action": "Click",
         "Data": "None"
       },
