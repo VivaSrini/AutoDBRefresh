@@ -266,22 +266,24 @@ def download_source(index, source):
                 continue
             else:
                 file = files[0]
+                xtn = os.path.splitext(file)[1]
                 log.info(f'Downloading file - {file}')
                 src = os.path.join(tdp, file)
-                dst = os.path.join(fdp, file)
+                dst = os.path.join(fdp, f'{source["Provider"]}{xtn}')
                 if os.path.exists(dst):
                     file_name, file_ext = os.path.splitext(file)
                     file = file_name + datetime.datetime.now().strftime("%H%M%S") + file_ext
                     dst = os.path.join(fdp, file)
+                log.info(f'Renaming file to  - {source["Provider"]}{xtn}')
                 os.rename(src, dst)
                 log.info('Download completed...')
                 break
 
-        upd_XL_stat(row=index + 1, provider=source["Provider"], download='Success', fName=file)
+        upd_XL_stat(row=index + 1, provider=source["Provider"], download='Success', fName=f'{source["Provider"]}{xtn}')
         if switched_tab:
             browser.close()
             browser.switch_to.window(t0)
-        return file
+        return f'{source["Provider"]}{xtn}'
 
     # Catch errors and process next item
     except NextItem as _e:
