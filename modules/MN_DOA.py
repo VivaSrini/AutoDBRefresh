@@ -91,8 +91,7 @@
 import csv
 import logging
 
-from src import custom_logger, prepare_csv_data, dedup_csv, empty_dict
-from src import get_primary, trim_file_header_rows
+from src import custom_logger, prepare_csv_data, empty_dict
 
 log = custom_logger.LogGen.logGen()
 log.setLevel(level=logging.DEBUG)
