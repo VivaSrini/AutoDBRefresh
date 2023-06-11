@@ -31,7 +31,11 @@ class NextItem(Exception):
 log = custom_logger.LogGen.logGen()
 log.setLevel(level=logging.DEBUG)
 log.info('Starting AutoDBRefresh Process...')
+
+# Make a copy into RUN instance folder - config & manual download
 shutil.copyfile(custom_logger.BASE_INPUT_JSON, custom_logger.RUN_INPUT_JSON)
+shutil.copyfile(custom_logger.BASE_CONFIG_INI, custom_logger.RUN_CONFIG_INI)
+shutil.copytree(custom_logger.MANUAL_DOWNLOAD_SRC_PATH, custom_logger.RUN_MNL_PATH)
 
 # Setup Excel Output
 wb = xlsxwriter.Workbook(custom_logger.XL_FILE)
@@ -107,10 +111,10 @@ def upd_XL_stat(row, provider="", download="", convert="", fName=""):
 def download_source(index, source):
     file = 'ERROR: couldn\'t download'
 
-    # If Download set to 'No' skip
-    if not source["Download"].lower()[0] == 'y':
-        log.info(f'Skipping download for {source["Provider"]}...')
-        upd_XL_stat(row=index + 1, provider=source["Provider"], download="Skipped", fName="*Download Skipped*")
+    # If Download set to 'Manual' skip
+    if source["Download"] == 'Manual':
+        log.info(f'Manual download configured for {source["Provider"]}...')
+        upd_XL_stat(row=index + 1, provider=source["Provider"], download="Skipped", fName="*Manual Download*")
         return
 
     try:
@@ -297,17 +301,22 @@ def process_downloaded_file(itemnum, source):
     if source['Convert'][0].upper() == 'N':
         log.info(f'Skipping conversion as configured')
         upd_XL_stat(row=itemnum + 1, convert="Skipped")
-        return
+        return 0
 
     if not source['FileName']:
         log.info(f'Skipping Conversion. Source not downloaded')
         upd_XL_stat(row=itemnum + 1, convert="Skipped")
-        return
+        return 0
+
+    if source['Download'] == 'Auto':
+        filename = os.path.join(custom_logger.FINAL_DOWNLOAD_PATH, source['FileName'])
+    elif source['Download'] == 'Manual':
+        filename = os.path.join(custom_logger.RUN_MNL_PATH, source['FileName'])
+    else:
+        raise Exception(f'ILLEGAL OPTION {source["Download"]}! Use only "Auto" or "Manual"')
 
     mods[source['Provider']] = importlib.import_module(source['Provider'])
-    data_records = mods[source['Provider']].processFile(
-        os.path.join(custom_logger.FINAL_DOWNLOAD_PATH, source['FileName'])
-    )
+    data_records = mods[source['Provider']].processFile(filename)
     log.info(f'Imported {len(data_records)} records from: {source["Provider"]}, File:{source["FileName"]} ')
 
     fname = source['Provider'] + '.csv' if custom_logger.MERGE_OUTPUT == 'N' else custom_logger.MERGED_CSV_FILENAME
@@ -327,12 +336,14 @@ def process_downloaded_file(itemnum, source):
             c.write(dict_to_csv(data_record))
 
     upd_XL_stat(row=itemnum + 1, convert="Success")
+    return len(data_records)
 
 
 # Read work queue from input.json
 with open(custom_logger.BASE_INPUT_JSON, "r") as inp_file:
     inpq = json.load(inp_file)
 num_items = len(inpq)
+total_recs = 0
 
 log.info(f'Found {num_items} sources to be processed')
 
@@ -342,9 +353,10 @@ try:
         log.info(f'Item# {idx+1}/{num_items}. Source:{item["Provider"]}')
         log.info('Downloading file...')
         if custom_logger.SKIP_DOWNLOAD == "N":
-            item['FileName'] = download_source(index=idx, source=item)
+            item['FileName'] = download_source(index=idx, source=item) or item['FileName']
         log.info(f'Converting file... {item["FileName"]}')
-        if custom_logger.SKIP_CONVERT == "N": process_downloaded_file(itemnum=idx, source=item)
+        if custom_logger.SKIP_CONVERT == "N":
+            total_recs += process_downloaded_file(itemnum=idx, source=item)
 
 # Exit Ctrl+C Gracefully
 except KeyboardInterrupt as _err:
@@ -354,7 +366,9 @@ except KeyboardInterrupt as _err:
 
 finally:
     # Close and save
-    log.info('Processing Completed')
+    log.info('*' * 80)
+    log.info(f'Processing Completed. {total_recs} CSV records written to output')
+    log.info('*' * 80)
     ws.set_default_row(hide_unused_rows=True)
     ws.autofilter(0, 0, num_items, 4)
     wb.close()

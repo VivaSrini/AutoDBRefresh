@@ -4,8 +4,11 @@ import logging
 import os
 import sys
 
+CONFIG_PATH = r'config/'
+CONFIG_INI_FILE = r'config.ini'
+
 config = RawConfigParser(inline_comment_prefixes=('#',))
-config.read(r'config/config.ini')
+config.read(CONFIG_PATH+CONFIG_INI_FILE)
 
 # Setup i/o files and folders
 INPUT_JSON_FILE_NAME = config['Files']['INPUT_JSON']
@@ -17,6 +20,7 @@ CSV_FOLDER_NAME = config['Folders']['CSV_FOLDER']
 CONFIG_FOLDER_NAME = config['Folders']['CFG_FOLDER']
 DOWNLOAD_FOLDER_NAME = config['Folders']['DNL_FOLDER']
 TEMP_FOLDER_NAME = config['Folders']['TMP_FOLDER']
+MANUAL_DOWNLOAD_FOLDER_NAME = config['Folders']['MNL_FOLDER']
 
 LOG_LVL_SCR = int(config['Log']['LOG_LVL_SCR'])
 LOG_LVL_FIL = int(config['Log']['LOG_LVL_FIL'])
@@ -35,6 +39,7 @@ MERGED_CSV_FILENAME = config['Params']['MERGED_CSV_FILENAME']
 BASE_PATH = os.path.realpath("./")
 CONFIG_PATH = os.path.join(BASE_PATH, CONFIG_FOLDER_NAME)
 MODULE_PATH = os.path.join(BASE_PATH, MOD_FOLDER_NAME)
+MANUAL_DOWNLOAD_SRC_PATH = os.path.join(BASE_PATH, MANUAL_DOWNLOAD_FOLDER_NAME)
 RUN_PATH = os.path.relpath(os.path.join(
     BASE_PATH,
     RUN_FOLDER_NAME,
@@ -43,12 +48,15 @@ RUN_PATH = os.path.relpath(os.path.join(
 FINAL_DOWNLOAD_PATH = os.path.join(RUN_PATH, DOWNLOAD_FOLDER_NAME)
 TEMP_DOWNLOAD_PATH = os.path.join(FINAL_DOWNLOAD_PATH, TEMP_FOLDER_NAME)
 RUN_CONFIG_PATH = os.path.join(RUN_PATH, CONFIG_FOLDER_NAME)
+RUN_MNL_PATH = os.path.join(RUN_PATH, MANUAL_DOWNLOAD_FOLDER_NAME)
 
 XL_FILE = os.path.join(RUN_PATH, config['Files']['RUN_REPORT_FILE'])
 XL_SHEET = config['Files']['RUN_REPORT_SHEET']
 
 BASE_INPUT_JSON = os.path.join(CONFIG_PATH, INPUT_JSON_FILE_NAME)
 RUN_INPUT_JSON = os.path.join(RUN_CONFIG_PATH, INPUT_JSON_FILE_NAME)
+BASE_CONFIG_INI = os.path.join(CONFIG_PATH, CONFIG_INI_FILE)
+RUN_CONFIG_INI = os.path.join(RUN_CONFIG_PATH, CONFIG_INI_FILE)
 CSV_PATH = os.path.join(RUN_PATH, CSV_FOLDER_NAME)
 LOG_PATH = os.path.join(RUN_PATH, LOG_FOLDER_NAME)
 LOG_FILE = os.path.realpath(os.path.join(LOG_PATH, OUTPUT_LOG_FILE_NAME))
