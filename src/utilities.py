@@ -254,8 +254,17 @@ def get_other(data_list, separator=',', pattern=None):
             item = re.search(pattern, item)
             if item:
                 return_array.append(item.group(0))
-        return ','.join(return_array)
-    return ','.join(other_array)
+        return ', '.join(return_array)
+    return ', '.join(other_array)
+
+
+def get_pnaics_onaics(instr, separator=' - '):
+    regex_search_pattern = f'([0-9]+)(?={separator})'
+    res = re.findall(regex_search_pattern, instr)
+    res_len = len(res)
+    pnaics = ('000000' + str(res[0]))[-6:] if res_len else ''
+    onaics = ', '.join(('000000' + str(item))[-6:] for item in res[1:]) if res_len > 1 else ''
+    return pnaics, onaics
 
 
 # Just Q&D, no controls yet...
@@ -273,8 +282,8 @@ def format_phone(country_code='', area_code='', number='', ext='', fmt='2'):
 
 
 def trim_file_header_rows(file_name, num_lines):
-    with open(file_name, encoding='utf-8') as f:
+    with open(file_name) as f:
         lines = f.readlines()
 
-    with open(file_name, encoding='utf-8', mode='w') as f:
+    with open(file_name, mode='w') as f:
         f.writelines(lines[num_lines:])
