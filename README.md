@@ -16,7 +16,7 @@ from various govt. web sources. The downloaded files are the converted into a st
    - **downloads** folder - All files downloaded in this run
    - **csv** folder - Converted file(s). Either <em>module_name.csv</em> per module, or a consolidated one as named in config.ini
    - **log** folder - log file and screenshots for this run
-## Input.json Structure
+## input.json Structure
 The `input.json` file contains all the source items to be processed. Each Item will follow zero or multiple steps and download one file
 ### Sample file
 ~~~
@@ -103,3 +103,8 @@ The `input.json` file contains all the source items to be processed. Each Item w
 |Screenshot|Take a screenshot|
 |Verify|Verify that element has value specified in 'Data'|
 |Wait|Pause execution for 'Data' seconds|
+## config.ini Structure
+The `config.json` file contains all the configuration parameters used by the program like folder names, file names and log formats
+
+### Sample file
+~~~
