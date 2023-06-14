@@ -227,9 +227,9 @@ def dict_to_csv(data_rec):
 
 
 def dedup_csv(filename, col_array):
-    df = pd.read_csv(filename)
-    for col in col_array:
-        df.pop(col)
+    df = pd.read_csv(filename, encoding='ISO-8859-1')
+    # for col in col_array:
+    #     df.pop(col)
     df.drop_duplicates(inplace=True)
     df.to_csv(filename, index=False)
 
