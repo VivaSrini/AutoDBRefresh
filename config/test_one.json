@@ -1,0 +1,20 @@
+[
+  {
+    "Provider": "CA_SFCTA",
+    "State": "CA",
+    "Name": "San Francisco County Transportation Authority",
+    "Website": "https://www.sfcta.org/about-us/work-with-us#panel-disadvantaged-local-business",
+    "Title": "Work with Us | SFCTA",
+    "Download": "Auto",
+    "Convert": "Yes",
+    "FileName": "",
+    "Steps": [
+      {
+        "XPath": "//a[contains(text(),'SFCTA Certified DBE/LBE/SBE/LGBTBE/DVBE')]",
+        "Name": "SFCTA Certified DBE/LBE/SBE/LGBTBE/DVBE",
+        "Action": "Click",
+        "Data": "None"
+      }
+    ]
+  }
+]

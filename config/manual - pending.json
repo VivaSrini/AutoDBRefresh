@@ -1,0 +1,62 @@
+[
+  {
+    "Provider": "GA_MARTA",
+    "State": "GA",
+    "Name": "Metropolitan Atlanta Rapid Transit Authority",
+    "Website": "https://marta.diversitysoftware.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "",
+    "Download": "Manual",
+    "Convert": "No",
+    "FileName": "GA_MARTA.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "IL_CEI",
+    "State": "IL",
+    "Name": "Illinois CMS",
+    "Website": "https://ceibep.diversitysoftware.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Commission on Equity and Inclusion - Illinois",
+    "Download": "Manual",
+    "Convert": "No",
+    "FileName": "IL_CEI.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "MD_HOWARD",
+    "State": "MD",
+    "Name": "Howard County, MD",
+    "Website": "https://howardcountymd.diversitysoftware.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "No",
+    "FileName": "MD_HOWARD.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "OR_DOT",
+    "State": "OR",
+    "Name": "Oregon DOT",
+    "Website": "https://oregon4biz.diversitysoftware.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "COBID Certified Firms Directory",
+    "Download": "Manual",
+    "Convert": "No",
+    "FileName": "OR_DOT.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "TN_DGS",
+    "State": "TN",
+    "Name": "Tennessee DGS",
+    "Website": "https://tn.diversitysoftware.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Diversity Business Certified Directory",
+    "Download": "Manual",
+    "Convert": "No",
+    "FileName": "TN_DGS.csv",
+    "Steps": [
+    ]
+  }
+]
