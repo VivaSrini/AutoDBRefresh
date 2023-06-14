@@ -44,6 +44,7 @@ header_format = wb.add_format({'bold': True, 'bg_color': '#AAAAAA'})
 success_format = wb.add_format({'font_color': '#006100', 'bg_color': '#C6EFCE'})
 failed_format = wb.add_format({'font_color': '#9C0006', 'bg_color': '#FFC7CE'})
 skipped_format = wb.add_format({'font_color': '#9C6500', 'bg_color': '#FFEB9C'})
+manual_format = wb.add_format({'font_color': '#000080', 'bg_color': '#99CCFF'})
 ws.write('A1', "SNo", header_format)
 ws.write('B1', "Provider", header_format)
 ws.write('C1', "Download", header_format)
@@ -99,7 +100,13 @@ def take_scr_shot(prefix):
 
 # Update Excel sheet with status
 def upd_XL_stat(row, provider="", download="", convert="", fName=""):
-    bg_formats = {'': '', 'Success': success_format, 'Failed': failed_format, 'Skipped': skipped_format}
+    bg_formats = {
+        'Success': success_format,
+        'Failed': failed_format,
+        'Skipped': skipped_format,
+        'Manual': manual_format,
+        '': ''
+    }
     if row: ws.write(row, 0, row)
     if provider: ws.write(row, 1, provider)
     if download: ws.write(row, 2, download, bg_formats[download])
@@ -109,190 +116,192 @@ def upd_XL_stat(row, provider="", download="", convert="", fName=""):
 
 
 def download_source(index, source):
-    file = 'ERROR: couldn\'t download'
+    # file = 'ERROR: couldn\'t download'
 
-    # If Download set to 'Manual' skip
+    # If Download set to 'Manual' return
     if source["Download"] == 'Manual':
         log.info(f'Manual download configured for {source["Provider"]}...')
-        upd_XL_stat(row=index + 1, provider=source["Provider"], download="Skipped", fName="*Manual Download*")
-        return
+        upd_XL_stat(row=index + 1, provider=source["Provider"], download="Manual", fName=source["FileName"])
+        return "Manual"
 
+    if source["Download"] == 'Skip':
+        log.info(f'Configured to skip source  {source["Provider"]}...')
+        upd_XL_stat(row=index + 1, provider=source["Provider"], download="Skipped", fName="*Source skipped*")
+        return "Skip"
+
+    # For each item, get website
+    log.info(f'Fetching website: {source["Website"]}')
     try:
-        # For each item, get website
-        log.info(f'Fetching website: {source["Website"]}')
+        browser.get(source["Website"])
+    except WebDriverException as _e:
+        err_msg = f'UNABLE TO CONNECT TO SOURCE!'
+        log.error(err_msg)
+        # log.exception(e)
+        take_scr_shot('ConnectionErr')
+        upd_XL_stat(row=index + 1, provider=source["Provider"], download="Failed", fName=err_msg)
+        return "Error"
+
+    # Read steps to be performed
+    num_steps = len(source['Steps'])
+    if not num_steps:
+        log.info(f'item #{index + 1}/{num_items} No steps direct download')
+
+    # reset switched_tab flag
+    switched_tab = False
+
+    # For each step, read step configuration
+    for stepnum, step in enumerate(source['Steps']):
+        elXPath = step['XPath']
+        elName = step['Name']
+        elAction = step['Action']
+        elData = step['Data']
+
+        log.info(f'Item# {index + 1}/{num_items}. Step# {stepnum + 1}/{num_steps}')
+
+        # Take screen shot and go to next step
+        if elAction == 'Screenshot':
+            log.info(f'  Taking screenshot...')
+            take_scr_shot('Screenshot')
+            continue
+
+        # Wait for n secs and go to next step
+        if elAction == 'Wait':
+            log.info(f'  Waiting for {elData} seconds')
+            time.sleep(int(elData))
+            continue
+
+        # Switch to newly opened tab, set flag and go to next step
+        if elAction == 'Tab':
+            log.info('  Switching tab')
+            t0 = browser.window_handles[0]
+            t1 = browser.window_handles[1]
+            browser.switch_to.window(t1)
+            switched_tab = True
+            continue
+
+        # Switch to iFrame of given name
+        if elAction == 'Frame':
+            log.info('  Switching Frame')
+            browser.switch_to.frame(elName)
+            continue
+
+        log.info(f'  Locating {elName}. XPath: {elXPath}')
+
+        # Only Verify, Click and Input verbs remaining.
+        # Locate element, or fail with error
         try:
-            browser.get(source["Website"])
-        except WebDriverException as _e:
-            err_msg = f'UNABLE TO CONNECT TO SOURCE!'
+            # Wait for element to be loaded and be clickable
+            log.info(f'  Waiting for element {elName}')
+            WebDriverWait(browser, 60).until(EC.element_to_be_clickable((By.XPATH, elXPath)))
+        except NoSuchElementException as _n:
+            err_msg = f'  No such Element: {elName}. XPath: {elXPath}'
             log.error(err_msg)
-            # log.exception(e)
-            take_scr_shot('ConnectionErr')
+            # log.exception(n)
+            take_scr_shot('NoSuchElement')
             upd_XL_stat(row=index + 1, provider=source["Provider"], download="Failed", fName=err_msg)
-            raise NextItem(err_msg)
+            return "Error"
+        except TimeoutException as _t:
+            err_msg = f'  Timeout waiting for Element: {elName}. XPath: {elXPath}'
+            log.error(err_msg)
+            # log.exception(t)
+            take_scr_shot('Timeout')
+            upd_XL_stat(row=index + 1, provider=source["Provider"], download="Failed", fName=err_msg)
+            return "Error"
+        # We could obtain element from earlier wait stmt, but it was giving error sometimes
+        # so explicit find_element following wait
+        element = browser.find_element(By.XPATH, elXPath)
 
-        # Read steps to be performed
-        num_steps = len(source['Steps'])
-        if not num_steps:
-            log.info(f'item #{index + 1}/{num_items} No steps direct download')
-
-        # reset switched_tab flag
-        switched_tab = False
-
-        # For each step, read step configuration
-        for stepnum, step in enumerate(source['Steps']):
-            elXPath = step['XPath']
-            elName = step['Name']
-            elAction = step['Action']
-            elData = step['Data']
-
-            log.info(f'Item# {index + 1}/{num_items}. Step# {stepnum + 1}/{num_steps}')
-
-            # Take screen shot and go to next step
-            if elAction == 'Screenshot':
-                log.info(f'  Taking screenshot...')
-                take_scr_shot('Screenshot')
+        # Verify current value of element with Data
+        if elAction == 'Verify':
+            log.info(f'  Verifying if value of {elXPath} is {elData}')
+            if element.text.strip() == elData:
+                log.info(f'  Verified successfully proceeding...')
                 continue
-
-            # Wait for n secs and go to next step
-            if elAction == 'Wait':
-                log.info(f'  Waiting for {elData} seconds')
-                time.sleep(int(elData))
-                continue
-
-            # Switch to newly opened tab, set flag and go to next step
-            if elAction == 'Tab':
-                log.info('  Switching tab')
-                t0 = browser.window_handles[0]
-                t1 = browser.window_handles[1]
-                browser.switch_to.window(t1)
-                switched_tab = True
-                continue
-
-            # Switch to iFrame of given name
-            if elAction == 'Frame':
-                log.info('  Switching Frame')
-                browser.switch_to.frame(elName)
-                continue
-
-            log.info(f'  Locating {elName}. XPath: {elXPath}')
-
-            # Only Verify, Click and Input verbs remaining.
-            # Locate element, or fail with error
-            try:
-                # Wait for element to be loaded and be clickable
-                log.info(f'  Waiting for element {elName}')
-                WebDriverWait(browser, 60).until(EC.element_to_be_clickable((By.XPATH, elXPath)))
-            except NoSuchElementException as _n:
-                err_msg = f'  No such Element: {elName}. XPath: {elXPath}'
+            else:
+                err_msg = f'  Verification failed. Value of {elXPath} is {element.text}'
                 log.error(err_msg)
-                # log.exception(n)
-                take_scr_shot('NoSuchElement')
-                raise NextItem(err_msg)
-            except TimeoutException as _t:
-                err_msg = f'  Timeout waiting for Element: {elName}. XPath: {elXPath}'
-                log.error(err_msg)
-                # log.exception(t)
-                take_scr_shot('Timeout')
-                raise NextItem(err_msg)
-            # We could obtain element from earlier wait stmt, but it was giving error sometimes
-            # so explicit find_element following wait
-            element = browser.find_element(By.XPATH, elXPath)
+                upd_XL_stat(row=index + 1, provider=source["Provider"], download="Failed", fName=err_msg)
+                return "Error"
 
-            # Verify current value of element with Data
-            if elAction == 'Verify':
-                log.info(f'  Verifying if value of {elXPath} is {elData}')
-                if element.text.strip() == elData:
-                    log.info(f'  Verified successfully proceeding...')
-                    continue
-                else:
-                    err_msg = f'  Verification failed. Value of {elXPath} is {element.text}'
-                    log.error(err_msg)
-                    raise NextItem(err_msg)
+        # In some cases, it is an array of elements, if so, get first element
+        if isinstance(element, list):
+            element = element[0]
 
-            # In some cases, it is an array of elements, if so, get first element
-            if isinstance(element, list):
-                element = element[0]
-
-            if element:
-                match elAction:
-                    # Trigger Mouse click event
-                    case "Click":
-                        log.info(f'  Moving to {elName}')
-                        actions.move_to_element(element).perform()
-                        log.info(f'  Clicking after moving to {elName}...')
-                        browser.execute_script("arguments[0].click();", element)
-                    # Enter Data into textbox element
-                    case "Input":
-                        # send keys to clear existing data, type new data and hit enter
-                        log.info(f'  Moving to {element}')
-                        actions.move_to_element(element).perform()
-                        log.info(f'  Clicking after moving to {elName}...')
-                        browser.execute_script("arguments[0].click();", element)
-                        log.info(f'  Sending \"{elData}\" to {elName} after moving')
-                        element.send_keys(Keys.CONTROL + "a")
-                        element.send_keys(Keys.DELETE)
-                        element.send_keys(elData)
-                        element.send_keys(Keys.ENTER)
-                    #
+        if element:
+            match elAction:
+                # Trigger Mouse click event
+                case "Click":
+                    log.info(f'  Moving to {elName}')
+                    actions.move_to_element(element).perform()
+                    log.info(f'  Clicking after moving to {elName}...')
+                    browser.execute_script("arguments[0].click();", element)
+                # Enter Data into textbox element
+                case "Input":
+                    # send keys to clear existing data, type new data and hit enter
+                    log.info(f'  Moving to {element}')
+                    actions.move_to_element(element).perform()
+                    log.info(f'  Clicking after moving to {elName}...')
+                    browser.execute_script("arguments[0].click();", element)
+                    log.info(f'  Sending \"{elData}\" to {elName} after moving')
+                    element.send_keys(Keys.CONTROL + "a")
+                    element.send_keys(Keys.DELETE)
+                    element.send_keys(elData)
+                    element.send_keys(Keys.ENTER)
                 #
-            else:
-                log.error(f'  Element {elName} not found!!')
+            #
+        else:
+            log.error(f'  Element {elName} not found!!')
 
-        start_time = datetime.datetime.now()
-        # Copy downloaded file
-        while True:
-            time.sleep(0.2)
-            curr_time = datetime.datetime.now()
-            elapsed = int((curr_time - start_time).total_seconds())
-            if elapsed > int(custom_logger.DWNL_TIMEOUT):
-                err_msg = f'Timeout ({custom_logger.DWNL_TIMEOUT}s) waiting for file download... skipping...'
-                take_scr_shot('Download Timeout')
-                log.info(err_msg)
-                raise NextItem(err_msg)
+    start_time = datetime.datetime.now()
+    # Copy downloaded file
+    while True:
+        time.sleep(0.2)
+        curr_time = datetime.datetime.now()
+        elapsed = int((curr_time - start_time).total_seconds())
+        if elapsed > int(custom_logger.DWNL_TIMEOUT):
+            err_msg = f'Timeout ({custom_logger.DWNL_TIMEOUT}s) waiting for file download... skipping...'
+            take_scr_shot('Download Timeout')
+            log.info(err_msg)
+            upd_XL_stat(row=index + 1, provider=source["Provider"], download="Failed", fName=err_msg)
+            return "Error"
 
-            tdp = custom_logger.TEMP_DOWNLOAD_PATH
-            fdp = custom_logger.FINAL_DOWNLOAD_PATH
-            files = os.listdir(tdp)
-            if len(files) == 0:
-                # log.info('Waiting for download to start...')
-                # take_scr_shot('Wait2Strt')
-                time.sleep(2)
-                continue
-            if [file for file in files if (".crdownload" in file or ".htm" in file)]:
-                # log.info('Waiting for download to complete...')
-                # take_scr_shot('Wait2End')
-                time.sleep(2)
-                for hf in glob.glob(os.path.join(tdp, "*.htm")):
-                    try:
-                        os.remove(hf)
-                    except PermissionError as _e:
-                        pass
-                continue
-            else:
-                file = files[0]
-                xtn = os.path.splitext(file)[1]
-                log.info(f'Downloading file - {file}')
-                src = os.path.join(tdp, file)
-                dst = os.path.join(fdp, f'{source["Provider"]}{xtn}')
-                if os.path.exists(dst):
-                    file_name, file_ext = os.path.splitext(file)
-                    file = file_name + datetime.datetime.now().strftime("%H%M%S") + file_ext
-                    dst = os.path.join(fdp, file)
-                log.info(f'Renaming file to  - {source["Provider"]}{xtn}')
-                os.rename(src, dst)
-                log.info('Download completed...')
-                break
+        tdp = custom_logger.TEMP_DOWNLOAD_PATH
+        fdp = custom_logger.FINAL_DOWNLOAD_PATH
+        files = os.listdir(tdp)
+        if len(files) == 0:
+            # log.info('Waiting for download to start...')
+            # take_scr_shot('Wait2Strt')
+            time.sleep(2)
+            continue
+        if [file for file in files if (".crdownload" in file or ".htm" in file)]:
+            # log.info('Waiting for download to complete...')
+            # take_scr_shot('Wait2End')
+            time.sleep(2)
+            for hf in glob.glob(os.path.join(tdp, "*.htm")):
+                try:
+                    os.remove(hf)
+                except PermissionError as _e:
+                    pass
+            continue
+        else:
+            file = files[0]
+            xtn = os.path.splitext(file)[1]
+            log.info(f'Downloading file {file}...')
+            src = os.path.join(tdp, file)
+            dst = os.path.join(fdp, f'{source["Provider"]}{xtn}')
+            if os.path.exists(dst):
+                file_name, file_ext = os.path.splitext(file)
+                file = file_name + datetime.datetime.now().strftime("%H%M%S") + file_ext
+                dst = os.path.join(fdp, file)
+            log.info(f'Renaming file to {source["Provider"]}{xtn}...')
+            os.rename(src, dst)
+            break
 
-        upd_XL_stat(row=index + 1, provider=source["Provider"], download='Success', fName=f'{source["Provider"]}{xtn}')
-        if switched_tab:
-            browser.close()
-            browser.switch_to.window(t0)
-        return f'{source["Provider"]}{xtn}'
-
-    # Catch errors and process next item
-    except NextItem as _e:
-        upd_XL_stat(row=index + 1, provider=source["Provider"], download='Failed', fName=_e.message)
-        return
+    upd_XL_stat(row=index + 1, provider=source["Provider"], download='Success', fName=f'{source["Provider"]}{xtn}')
+    if switched_tab:
+        browser.close()
+        browser.switch_to.window(t0)
+    return f'{source["Provider"]}{xtn}'
 
 
 def process_downloaded_file(itemnum, source):
@@ -304,7 +313,7 @@ def process_downloaded_file(itemnum, source):
         return 0
 
     if not source['FileName']:
-        log.info(f'Skipping Conversion. Source not downloaded')
+        log.info(f'Cannot convert. Source not downloaded')
         upd_XL_stat(row=itemnum + 1, convert="Skipped")
         return 0
 
@@ -313,30 +322,38 @@ def process_downloaded_file(itemnum, source):
     elif source['Download'] == 'Manual':
         filename = os.path.join(custom_logger.RUN_MNL_PATH, source['FileName'])
     else:
-        raise Exception(f'ILLEGAL OPTION {source["Download"]}! Use only "Auto" or "Manual"')
+        err_msg = f'ILLEGAL DOWNLOAD OPTION {source["Download"]} for {source["Provider"]}! Use only "Auto" or "Manual"'
+        raise Exception(err_msg)
 
     mods[source['Provider']] = importlib.import_module(source['Provider'])
-    data_records = mods[source['Provider']].processFile(filename)
-    log.info(f'Imported {len(data_records)} records from: {source["Provider"]}, File:{source["FileName"]} ')
+    try:
+        data_records = mods[source['Provider']].processFile(filename)
+        log.info(f'Imported {len(data_records)} records from: {source["Provider"]}, File:{source["FileName"]}')
 
-    fname = source['Provider'] + '.csv' if custom_logger.MERGE_OUTPUT == 'N' else custom_logger.MERGED_CSV_FILENAME
-    mode = 'w' if custom_logger.MERGE_OUTPUT == 'N' else 'a'
-    output_csv_file = os.path.join(custom_logger.CSV_PATH, fname)
+        fname = source['Provider'] + '.csv' if custom_logger.MERGE_OUTPUT == 'N' else custom_logger.MERGED_CSV_FILENAME
+        mode = 'w' if custom_logger.MERGE_OUTPUT == 'N' else 'a'
+        output_csv_file = os.path.join(custom_logger.CSV_PATH, fname)
 
-    with open(file=output_csv_file, mode=mode, encoding='utf-8') as c:
+        with open(file=output_csv_file, mode=mode, encoding='utf-8') as c:
 
-        if custom_logger.MERGE_OUTPUT == 'N':
-            c.write(get_csv_header())
-        elif not wrote_header:
-            wrote_header = True
-            c.write(get_csv_header())
+            if custom_logger.MERGE_OUTPUT == 'N':
+                c.write(get_csv_header())
+            elif not wrote_header:
+                wrote_header = True
+                c.write(get_csv_header())
 
-        log.info(f'Writing {len(data_records)} CSV records into {fname}...')
-        for data_record in data_records:
-            c.write(dict_to_csv(data_record))
+            log.info(f'Writing {len(data_records)} CSV records into {fname}...')
+            for data_record in data_records:
+                c.write(dict_to_csv(data_record))
 
-    upd_XL_stat(row=itemnum + 1, convert="Success")
-    return len(data_records)
+        upd_XL_stat(row=itemnum + 1, convert="Success")
+        return len(data_records)
+
+    except Exception as e:
+        err_msg = e.message if hasattr(e, 'message') else "*Error Converting File*"
+        upd_XL_stat(row=itemnum + 1, convert="Failed", fName=err_msg)
+        log.error(e)
+        return 0
 
 
 # Read work queue from input.json
@@ -353,8 +370,16 @@ try:
         log.info(f'Item# {idx+1}/{num_items}. Source:{item["Provider"]}')
         log.info('Downloading file...')
         if custom_logger.SKIP_DOWNLOAD == "N":
-            item['FileName'] = download_source(index=idx, source=item) or item['FileName']
-        log.info(f'Converting file... {item["FileName"]}')
+            result = download_source(index=idx, source=item) or item['FileName']
+            if result == "Skip":
+                log.info('Skipping source as configured')
+                continue
+            if result == "Error":
+                log.info('*Error Downloading File*')
+                continue
+            if not result == "Manual":
+                item['FileName'] = result
+            log.info(f'Converting file {item["FileName"]}...')
         if custom_logger.SKIP_CONVERT == "N":
             total_recs += process_downloaded_file(itemnum=idx, source=item)
 
