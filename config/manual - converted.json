@@ -1,0 +1,470 @@
+[
+  {
+    "Provider": "AZ_PHOENIX",
+    "State": "AZ",
+    "Name": "City of Phoenix, AZ",
+    "Website": "https://phoenix.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "AZ_PHOENIX.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "FL_ORANGE",
+    "State": "FL",
+    "Name": "Orange County, Florida",
+    "Website": "https://ocfl.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "FL_ORANGE.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "FL_HILLSBOROUGH",
+    "State": "FL",
+    "Name": "Hillsborough County, FL",
+    "Website": "https://hillsboroughcounty.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "FL_HILLSBOROUGH.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "FL_GOAA",
+    "State": "FL",
+    "Name": "Greater Orlando Aviation Authority",
+    "Website": "https://goaa.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "FL_GOAA.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "GA_FULTON",
+    "State": "GA",
+    "Name": "Fulton County, GA",
+    "Website": "https://fultoncountyga.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "GA_FULTON.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "IL_COOK",
+    "State": "IL",
+    "Name": "Cook County, IL",
+    "Website": "https://cookcounty.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "IL_COOK.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "MI_WCAA",
+    "State": "MI",
+    "Name": "Wayne County Airport Authority",
+    "Website": "https://metroairport.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "MI_WCAA.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "MO_STL",
+    "State": "MO",
+    "Name": "St. Louis Lambert International Airport",
+    "Website": "https://flystl.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "City of St. Louis M/WBE Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "MO_STL.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "NC_CHARLOTTE",
+    "State": "NC",
+    "Name": "City of Charlotte, NC",
+    "Website": "https://charlotte.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": " City of Charlotte Certified Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "NC_CHARLOTTE.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "NC_RDU",
+    "State": "NC",
+    "Name": "Raleigh-Durham Airport Authority",
+    "Website": "https://rdu.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "M/W/S/DBE Directory ",
+    "Download": "Manual",
+    "Convert": "Yesty`6ty",
+    "FileName": "NC_RDU.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "ND_DOT",
+    "State": "ND",
+    "Name": "North Dakota Department of Transportation",
+    "Website": "https://dotnd.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "DBE/ACDBE Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "ND_DOT.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "OH_CLEVELAND",
+    "State": "OH",
+    "Name": "City of Cleveland, OH",
+    "Website": "https://cleveland.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "OH_CLEVELAND.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "OH_COLUMBUS",
+    "State": "OH",
+    "Name": "City of Columbus, OH",
+    "Website": "https://cleveland.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "City of Columbus Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "OH_COLUMBUS.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "TN_NASHVILLE",
+    "State": "TN",
+    "Name": "Metropolitan Nashville Airport Authority",
+    "Website": "https://flynashville.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "TN_NASHVILLE.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "VA_RICHMOND",
+    "State": "VA",
+    "Name": "Office of Minority Business Development. City of Richmond, VA",
+    "Website": "https://richmondombd.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "VA_RICHMOND.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "DC_MWAA",
+    "State": "DC",
+    "Name": "Metropolitan Washington Airports Authority",
+    "Website": "https://mwaa.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "DC_MWAA.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "WA_OMWBE",
+    "State": "WA",
+    "Name": "Office of Minority and Women's Business Enterprises",
+    "Website": "https://omwbe.diversitycompliance.com/FrontEnd/SearchCertifiedDirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "WA_OMWBE.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "WI_MMSD",
+    "State": "WI",
+    "Name": "Milwaukee Metropolitan Sewerage District",
+    "Website": "https://mmsd.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "MMSD Certified Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "WI_MMSD.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "WI_MKE",
+    "State": "WI",
+    "Name": "Milwaukee County, WI",
+    "Website": "https://mke.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Milwaukee County's Cerified Vendor List",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "WI_MKE.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "WI_MILWAUKEE",
+    "State": "WI",
+    "Name": "City of Milwaukee, WI",
+    "Website": "https://milwaukee.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "SBE Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "WI_MILWAUKEE.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "CA_UCP",
+    "State": "CA",
+    "Name": "California UCP",
+    "Website": "https://californiaucp.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "CA_UCP.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "CO_UCP",
+    "State": "CO",
+    "Name": "Colorado UCP",
+    "Website": "https://coucp.dbesystem.com/FrontEnd/SearchCertifiedDirectory.asp",
+    "Title": "Colorado UCP DBE/ACDBE Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "CO_UCP.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "DE_DOT",
+    "State": "DE",
+    "Name": "Delaware DOT",
+    "Website": "https://coucp.dbesystem.com/FrontEnd/SearchCertifiedDirectory.asp",
+    "Title": "Certified DBE/ACDBE Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "DE_DOT.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "FL_JTA",
+    "State": "FL",
+    "Name": "Jacksonville Transportation Authority - JTA",
+    "Website": "https://ddot.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "FL_JTA.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "ID_DOT",
+    "State": "ID",
+    "Name": "Idaho DOT",
+    "Website": "https://itd.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified DBE/ACDBE Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "ID_DOT.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "IL_CTA",
+    "State": "IL",
+    "Name": "Chicago Transit Authority - CTA",
+    "Website": "https://cta.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "CTA DBE Certification Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "IL_CTA.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "LA_NEWORLEANS",
+    "State": "LA",
+    "Name": "City of New Orleans, LA",
+    "Website": "https://neworleans.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "DBE Certification Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "LA_NEWORLEANS.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "MS_JMAA",
+    "State": "MS",
+    "Name": "Jackson Municipal Airport Authority",
+    "Website": "https://jmaa.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Jackson Municipal Airport Authority's Certification Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "MS_JMAA.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "MO_STL_METRO",
+    "State": "MO",
+    "Name": "Metro St. Louis",
+    "Website": "https://metrostlouis.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Supplier Diversity Vendor Database",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "MO_STL_METRO.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "NV_DOT",
+    "State": "NV",
+    "Name": "Nevada DOT",
+    "Website": "https://ndot.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "NUCP Certified DBE Vendor List",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "NV_DOT.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "NJ_UCP",
+    "State": "NJ",
+    "Name": "New Jersey UCP",
+    "Website": "https://njucp.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Search Certified Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "NJ_UCP.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "PA_UCP",
+    "State": "PA",
+    "Name": "Pennsylvania UCP",
+    "Website": "https://paucp.dbesystem.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Search Certified Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "PA_UCP.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "CO_DENVER",
+    "State": "CO",
+    "Name": "City of Denver, CO",
+    "Website": "https://denver.mwdbe.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Certified Vendor Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "CO_DENVER.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "FL_ORLANDO",
+    "State": "FL",
+    "Name": "City of Orlando, FL",
+    "Website": "https://cityoforlando.mwdbe.com//FrontEnd/searchcertifieddirectory.asp",
+    "Title": "City of Orlando Certified Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "FL_ORLANDO.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "FL_PENSACOLA",
+    "State": "FL",
+    "Name": "City of Pensacola, FL",
+    "Website": "https://pensacola.mwdbe.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "City of Pensacola Certified Firm Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "FL_PENSACOLA.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "IL_CHICAGO",
+    "State": "IL",
+    "Name": "City of Chicago, IL",
+    "Website": "https://chicago.mwdbe.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "Chicago Certified Firms Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "IL_CHICAGO.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "MO_KANSASCITY",
+    "State": "MO",
+    "Name": "City of Kansas City, MO",
+    "Website": "https://kcmohrd.mwdbe.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "KCMO’s Certified Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "MO_KANSASCITY.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "TN_MSCAA",
+    "State": "TN",
+    "Name": "Memphis Shelby County Airport Authority",
+    "Website": "https://cookcounty.diversitycompliance.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "MSCAA DBE/ACDBE DIRECTORY",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "TN_MSCAA.csv",
+    "Steps": [
+    ]
+  },
+  {
+    "Provider": "TX_HOUSTON",
+    "State": "TX",
+    "Name": "City of Houston, TX",
+    "Website": "https://houston.mwdbe.com/FrontEnd/searchcertifieddirectory.asp",
+    "Title": "City of Houston MWSBE/PDBE, DBE/ACDBE, and LGBTBE Directory",
+    "Download": "Manual",
+    "Convert": "Yes",
+    "FileName": "TX_HOUSTON.csv",
+    "Steps": [
+    ]
+  }
+]
